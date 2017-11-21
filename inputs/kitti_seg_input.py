@@ -139,30 +139,32 @@ def _make_data_gen(hypes, phase, data_dir):
     distribution.]
     """
     if phase == 'train':
-        data_file = hypes['data']["train_file"]
+        data_file = hypes['data']['train_file']
     elif phase == 'val':
-        data_file = hypes['data']["val_file"]
+        data_file = hypes['data']['val_file']
     else:
         assert False, "Unknown Phase %s" % phase
 
     data_file = os.path.join(data_dir, data_file)
 
-    road_color = np.array(hypes['data']['road_color'])
-    background_color = np.array(hypes['data']['background_color'])
+    classes = hypes['classes']
+    num_classes = len(classes)
+    assert num_classes > 1, "Min amount of segmentation classes is 2 but only %d class(es) is defined" % len(num_classes)
 
     data = _load_gt_file(hypes, data_file)
 
     for image, gt_image in data:
 
-        gt_bg = np.all(gt_image == background_color, axis=2)
-        gt_road = np.all(gt_image == road_color, axis=2)
+        gt_classes = []
+        for k, v in classes:
+            gt_classes.append(np.all(gt_image == v, axis=2))
 
-        assert(gt_road.shape == gt_bg.shape)
-        shape = gt_bg.shape
-        gt_bg = gt_bg.reshape(shape[0], shape[1], 1)
-        gt_road = gt_road.reshape(shape[0], shape[1], 1)
+        assert(gt_classes[0].shape == gt_classes[-1].shape)
+        shape = gt_classes[0].shape
+        for i in range(num_classes):
+            gt_classes[i] = gt_classes[i].reshape(shape[0], shape[1], 1)
 
-        gt_image = np.concatenate((gt_bg, gt_road), axis=2)
+        gt_image = np.concatenate(gt_classes, axis=2)
 
         if phase == 'val':
             yield image, gt_image
