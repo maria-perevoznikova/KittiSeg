@@ -49,6 +49,7 @@ FLAGS = flags.FLAGS
 sys.path.insert(1, 'incl')
 
 from seg_utils import seg_utils as seg
+import gpu_utils
 
 try:
     # Check whether setup was done correctly
@@ -106,7 +107,10 @@ def resize_label_image(image, gt_image, image_height, image_width):
 
 def main(_):
     tv_utils.set_gpus_to_use()
+    # CPU/GPU switch
+    gpu_utils.setup_no_gpu()
 
+    # demo image size: 375x1242
     if FLAGS.input_image is None:
         logging.error("No input_image was given.")
         logging.info(

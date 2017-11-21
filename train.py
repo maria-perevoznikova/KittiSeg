@@ -15,12 +15,14 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-import commentjson
+import json
 import logging
 import os
 import sys
 
 import collections
+
+import gpu_utils
 
 
 def dict_merge(dct, merge_dct):
@@ -88,6 +90,8 @@ else:
 
 def main(_):
     utils.set_gpus_to_use()
+    # CPU/GPU switch
+    gpu_utils.setup_no_gpu()
 
     try:
         import tensorvision.train
@@ -105,7 +109,7 @@ def main(_):
 
     with open(tf.app.flags.FLAGS.hypes, 'r') as f:
         logging.info("f: %s", f)
-        hypes = commentjson.load(f)
+        hypes = json.load(f)
     utils.load_plugins()
 
     if tf.app.flags.FLAGS.mod is not None:
