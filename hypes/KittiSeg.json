@@ -12,7 +12,7 @@
     "train_file" : "data_road/train3.txt",
     "val_file" : "data_road/val3.txt",
     "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy",
-    "kitti_url": ""
+    "kitti_url": "http://kitti.is.tue.mpg.de/kitti/data_road.zip"
   },
 
   "classes": {

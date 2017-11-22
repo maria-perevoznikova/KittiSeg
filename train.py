@@ -91,7 +91,7 @@ else:
 def main(_):
     utils.set_gpus_to_use()
     # CPU/GPU switch
-    gpu_utils.setup_no_gpu()
+    # gpu_utils.setup_no_gpu()
 
     try:
         import tensorvision.train
