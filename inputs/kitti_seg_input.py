@@ -149,22 +149,23 @@ def _make_data_gen(hypes, phase, data_dir):
 
     classes = hypes['classes']
     num_classes = len(classes)
-    assert num_classes > 1, "Min amount of segmentation classes is 2 but only %d class(es) is defined" % len(num_classes)
+    assert num_classes > 1, "Min amount of segmentation classes is 2 but only %d class(es) is defined" % num_classes
 
     data = _load_gt_file(hypes, data_file)
 
     for image, gt_image in data:
 
         gt_classes = []
-        for k, v in classes:
-            gt_classes.append(np.all(gt_image == v, axis=2))
-
+        for color in classes.values():
+            gt_classes.append(np.all(gt_image == color, axis=2))
         assert(gt_classes[0].shape == gt_classes[-1].shape)
-        shape = gt_classes[0].shape
-        for i in range(num_classes):
-            gt_classes[i] = gt_classes[i].reshape(shape[0], shape[1], 1)
 
-        gt_image = np.concatenate(gt_classes, axis=2)
+        gt_reshaped = []
+        shape = gt_classes[0].shape
+        for gt_class in gt_classes:
+            gt_reshaped.append(gt_class.reshape(shape[0], shape[1], 1))
+
+        gt_image = np.concatenate(gt_reshaped, axis=2)
 
         if phase == 'val':
             yield image, gt_image
