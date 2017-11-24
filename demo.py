@@ -122,8 +122,7 @@ def main(_):
     if FLAGS.logdir is None:
         # Download and use weights from the MultiNet Paper
         if 'TV_DIR_RUNS' in os.environ:
-            runs_dir = os.path.join(os.environ['TV_DIR_RUNS'],
-                                    'KittiSeg')
+            runs_dir = os.environ['TV_DIR_RUNS']
         else:
             runs_dir = 'RUNS'
         maybe_download_and_extract(runs_dir)
