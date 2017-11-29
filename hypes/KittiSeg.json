@@ -5,7 +5,7 @@
     "objective_file" : "../decoder/kitti_multiloss.py",
     "optimizer_file" : "../optimizer/generic_optimizer.py",
     "evaluator_file" : "../evals/kitti_eval.py",
-    "tester_file" : "../submodules/evaluation/kitty_test.py"
+    "tester_file" : "../submodules/evaluation/kitti_test.py"
   },
   "path": ["../submodules"],
 
