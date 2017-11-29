@@ -95,8 +95,7 @@ def main(_):
     utils.load_plugins()
 
     if 'TV_DIR_RUNS' in os.environ:
-        runs_dir = os.path.join(os.environ['TV_DIR_RUNS'],
-                                'KittiSeg')
+        runs_dir = os.environ['TV_DIR_RUNS']
     else:
         runs_dir = 'RUNS'
 
