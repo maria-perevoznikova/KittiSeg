@@ -7,12 +7,16 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import imp
+import json
 import logging
+import numpy as np
 import os.path
 import sys
 
 import scipy as scp
 import scipy.misc
+
 
 sys.path.insert(1, '../../incl')
 
@@ -20,6 +24,7 @@ import tensorflow as tf
 
 import tensorvision.utils as utils
 import tensorvision.core as core
+import tensorvision.analyze as ana
 
 from seg_utils import seg_utils as seg
 
@@ -36,12 +41,9 @@ else:
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-test_file = 'data_road/testing.txt'
-
 
 def create_test_output(hypes, sess, image_pl, softmax):
-    data_dir = hypes['dirs']['data_dir']
-    data_file = os.path.join(data_dir, test_file)
+    data_file = hypes['data']['test_file']
     image_dir = os.path.dirname(data_file)
 
     logdir = "test_images/"
@@ -100,7 +102,7 @@ def _create_input_placeholder():
     return image_pl, label_pl
 
 
-def infer(logdir):
+def do_inference(logdir):
     """
     Analyze a trained model.
 
@@ -123,7 +125,8 @@ def infer(logdir):
         with tf.name_scope('Validation'):
             image_pl, label_pl = _create_input_placeholder()
             image = tf.expand_dims(image_pl, 0)
-            softmax = core.build_inference_graph(hypes, modules, image=image)
+            softmax = core.build_inference_graph(hypes, modules,
+                                                 image=image)
 
         sess = tf.Session()
         saver = tf.train.Saver()
@@ -160,7 +163,7 @@ def main(_):
     logdir = os.path.realpath(FLAGS.logdir)
 
     logging.info("Starting to analyze Model in: %s", logdir)
-    infer(logdir)
+    do_inference(logdir)
 
 
 if __name__ == '__main__':

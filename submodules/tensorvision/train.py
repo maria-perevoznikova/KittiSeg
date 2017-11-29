@@ -99,14 +99,15 @@ def initialize_training_folder(hypes, files_dir="model_files", logging=True):
     _copy_parameters_to_traindir(
         hypes, hypes['model']['input_file'], "data_input.py", target_dir)
     _copy_parameters_to_traindir(
-        hypes, hypes['model']['architecture_file'], "architecture.py",
-        target_dir)
+        hypes, hypes['model']['architecture_file'], "architecture.py",target_dir)
     _copy_parameters_to_traindir(
         hypes, hypes['model']['objective_file'], "objective.py", target_dir)
     _copy_parameters_to_traindir(
         hypes, hypes['model']['optimizer_file'], "solver.py", target_dir)
     _copy_parameters_to_traindir(
         hypes, hypes['model']['evaluator_file'], "eval.py", target_dir)
+    _copy_parameters_to_traindir(
+        hypes, hypes['model']['tester_file'], "test.py", target_dir)
 
 
 def maybe_download_and_extract(hypes):

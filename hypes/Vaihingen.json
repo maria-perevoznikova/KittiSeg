@@ -4,13 +4,15 @@
     "architecture_file" : "../encoder/fcn8_vgg.py",
     "objective_file" : "../decoder/kitti_multiloss.py",
     "optimizer_file" : "../optimizer/generic_optimizer.py",
-    "evaluator_file" : "../evals/vaihingen_eval.py"
+    "evaluator_file" : "../evals/vaihingen_eval.py",
+    "tester_file" : "../evals/vaihingen_test.py"
   },
   "path": ["../incl"],
 
   "data": {
     "train_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/train/train.txt",
     "val_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/val/val.txt",
+    "test_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/test/test.txt",
     "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy"
   },
 

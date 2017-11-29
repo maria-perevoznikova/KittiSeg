@@ -112,7 +112,7 @@ def main(_):
     ana.do_analyze(logdir)
 
     logging.info("Creating output on test data.")
-    kitti_test.do_inference(logdir)
+    ana.do_inference(logdir)
 
     logging.info("Analysis for pretrained model complete.")
     logging.info("For evaluating your own models I recommend using:"

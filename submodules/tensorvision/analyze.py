@@ -45,6 +45,24 @@ def _write_images_to_logdir(images, logdir):
         save_file = os.path.join(logdir, name)
         scp.misc.imsave(save_file, image)
 
+def do_inference(logdir):
+    """
+    Create output on test data.
+    Analyze a trained model.
+
+    This will load model files and weights found in logdir and run inference.
+
+    Parameters
+    ----------
+    logdir : string
+        Directory with logs.
+    """
+    hypes = utils.load_hypes_from_logdir(logdir)
+    modules = utils.load_modules_from_logdir(logdir)
+
+    modules['test'].infer(logdir)
+
+    return
 
 def do_analyze(logdir, base_path=None):
     """

@@ -170,6 +170,10 @@ def load_modules_from_hypes(hypes, postfix=""):
     eva = imp.load_source("evaluator_%s" % postfix, f)
     modules['eval'] = eva
 
+    f = os.path.join(base_path, hypes['model']['tester_file'])
+    test = imp.load_source("tester_%s" % postfix, f)
+    modules['test'] = test
+
     return modules
 
 
@@ -208,24 +212,33 @@ def load_modules_from_logdir(logdir, dirname="model_files", postfix=""):
     data_input, arch, objective, solver
     """
     model_dir = os.path.join(logdir, dirname)
+
     f = os.path.join(model_dir, "data_input.py")
     # TODO: create warning if file f does not exists
     data_input = imp.load_source("input_%s" % postfix, f)
+
     f = os.path.join(model_dir, "architecture.py")
     arch = imp.load_source("arch_%s" % postfix, f)
+
     f = os.path.join(model_dir, "objective.py")
     objective = imp.load_source("objective_%s" % postfix, f)
+
     f = os.path.join(model_dir, "solver.py")
     solver = imp.load_source("solver_%s" % postfix, f)
 
     f = os.path.join(model_dir, "eval.py")
     eva = imp.load_source("evaluator_%s" % postfix, f)
+
+    f = os.path.join(model_dir, "test.py")
+    test = imp.load_source("tester_%s" % postfix, f)
+
     modules = {}
     modules['input'] = data_input
     modules['arch'] = arch
     modules['objective'] = objective
     modules['solver'] = solver
     modules['eval'] = eva
+    modules['test'] = test
 
     return modules
 
