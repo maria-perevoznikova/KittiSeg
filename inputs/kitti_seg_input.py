@@ -50,7 +50,7 @@ def maybe_download_and_extract(hypes):
         os.makedirs(data_dir)
 
     data_road_zip = os.path.join(data_dir, 'data_road.zip')
-    vgg_weights = os.path.join(data_dir, 'vgg16.npy')
+    vgg_weights = os.path.join(data_dir, 'weights', 'vgg16.npy')
     kitti_road_dir = os.path.join(data_dir, 'data_road/')
 
     if os.path.exists(vgg_weights) and os.path.exists(kitti_road_dir):
