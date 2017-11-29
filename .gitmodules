@@ -1,6 +1,0 @@
-[submodule "submodules/TensorVision"]
-	path = submodules/TensorVision
-	url = https://github.com/maria-perevoznikova/TensorVision.git
-[submodule "submodules/tensorflow-fcn"]
-	path = submodules/tensorflow-fcn
-	url = https://github.com/maria-perevoznikova/tensorflow-fcn.git
