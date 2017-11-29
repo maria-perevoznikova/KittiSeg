@@ -7,7 +7,7 @@
     "evaluator_file" : "../evals/kitti_eval.py",
     "tester_file" : "../submodules/evaluation/kitty_test.py"
   },
-  "path": ["../incl"],
+  "path": ["../submodules"],
 
   "data": {
     "train_file" : "data_road/train3.txt",

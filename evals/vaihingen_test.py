@@ -18,7 +18,7 @@ import scipy as scp
 import scipy.misc
 
 
-sys.path.insert(1, '../../incl')
+sys.path.insert(1, '../../submodules')
 
 import tensorflow as tf
 

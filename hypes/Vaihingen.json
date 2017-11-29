@@ -7,7 +7,7 @@
     "evaluator_file" : "../evals/vaihingen_eval.py",
     "tester_file" : "../evals/vaihingen_test.py"
   },
-  "path": ["../incl"],
+  "path": ["../submodules"],
 
   "data": {
     "train_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/train/train.txt",
