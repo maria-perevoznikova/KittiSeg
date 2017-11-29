@@ -49,7 +49,7 @@ def maybe_download_and_extract(hypes):
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
 
-    vgg_weights = os.path.join(data_dir, 'vgg16.npy')
+    vgg_weights = os.path.join(data_dir, 'weights', 'vgg16.npy')
 
     if os.path.exists(vgg_weights):
         return
