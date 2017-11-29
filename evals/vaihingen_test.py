@@ -7,16 +7,12 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import imp
-import json
 import logging
-import numpy as np
 import os.path
 import sys
 
 import scipy as scp
 import scipy.misc
-
 
 sys.path.insert(1, '../../submodules')
 
@@ -24,7 +20,6 @@ import tensorflow as tf
 
 import tensorvision.utils as utils
 import tensorvision.core as core
-import tensorvision.analyze as ana
 
 from seg_utils import seg_utils as seg
 
@@ -66,8 +61,6 @@ def create_test_output(hypes, sess, image_pl, softmax):
     if not os.path.exists(logdir_green):
         os.mkdir(logdir_green)
 
-    image_list = []
-
     with open(data_file) as file:
         for i, image_file in enumerate(file):
                 image_file = image_file.rstrip()
@@ -85,14 +78,12 @@ def create_test_output(hypes, sess, image_pl, softmax):
                 green_image = utils.fast_overlay(image, hard)
 
                 name = os.path.basename(image_file)
-                new_name = name.split('_')[0] + "_road_" + name.split('_')[1]
-
-                save_file = os.path.join(logdir, new_name)
+                save_file = os.path.join(logdir, name)
                 logging.info("Writing file: %s", save_file)
                 scp.misc.imsave(save_file, output_im)
-                save_file = os.path.join(logdir_rb, new_name)
+                save_file = os.path.join(logdir_rb, name)
                 scp.misc.imsave(save_file, ov_image)
-                save_file = os.path.join(logdir_green, new_name)
+                save_file = os.path.join(logdir_green, name)
                 scp.misc.imsave(save_file, green_image)
 
 
@@ -102,7 +93,7 @@ def _create_input_placeholder():
     return image_pl, label_pl
 
 
-def do_inference(logdir):
+def infer(logdir):
     """
     Analyze a trained model.
 
@@ -163,7 +154,7 @@ def main(_):
     logdir = os.path.realpath(FLAGS.logdir)
 
     logging.info("Starting to analyze Model in: %s", logdir)
-    do_inference(logdir)
+    infer(logdir)
 
 
 if __name__ == '__main__':
