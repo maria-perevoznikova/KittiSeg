@@ -20,7 +20,7 @@ import tensorflow as tf
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-sys.path.insert(1, 'incl')
+sys.path.insert(1, 'submodules')
 
 import tensorvision.train as train
 import tensorvision.analyze as ana
@@ -95,8 +95,7 @@ def main(_):
     utils.load_plugins()
 
     if 'TV_DIR_RUNS' in os.environ:
-        runs_dir = os.path.join(os.environ['TV_DIR_RUNS'],
-                                'KittiSeg')
+        runs_dir = os.environ['TV_DIR_RUNS']
     else:
         runs_dir = 'RUNS'
 
@@ -113,7 +112,7 @@ def main(_):
     ana.do_analyze(logdir)
 
     logging.info("Creating output on test data.")
-    kitti_test.do_inference(logdir)
+    ana.do_inference(logdir)
 
     logging.info("Analysis for pretrained model complete.")
     logging.info("For evaluating your own models I recommend using:"

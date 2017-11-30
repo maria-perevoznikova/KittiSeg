@@ -36,12 +36,9 @@ else:
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-test_file = 'data_road/testing.txt'
-
 
 def create_test_output(hypes, sess, image_pl, softmax):
-    data_dir = hypes['dirs']['data_dir']
-    data_file = os.path.join(data_dir, test_file)
+    data_file = hypes['data']['test_file']
     image_dir = os.path.dirname(data_file)
 
     logdir = "test_images/"
@@ -64,8 +61,6 @@ def create_test_output(hypes, sess, image_pl, softmax):
     if not os.path.exists(logdir_green):
         os.mkdir(logdir_green)
 
-    image_list = []
-
     with open(data_file) as file:
         for i, image_file in enumerate(file):
                 image_file = image_file.rstrip()
@@ -83,14 +78,12 @@ def create_test_output(hypes, sess, image_pl, softmax):
                 green_image = utils.fast_overlay(image, hard)
 
                 name = os.path.basename(image_file)
-                new_name = name.split('_')[0] + "_road_" + name.split('_')[1]
-
-                save_file = os.path.join(logdir, new_name)
+                save_file = os.path.join(logdir, name)
                 logging.info("Writing file: %s", save_file)
                 scp.misc.imsave(save_file, output_im)
-                save_file = os.path.join(logdir_rb, new_name)
+                save_file = os.path.join(logdir_rb, name)
                 scp.misc.imsave(save_file, ov_image)
-                save_file = os.path.join(logdir_green, new_name)
+                save_file = os.path.join(logdir_green, name)
                 scp.misc.imsave(save_file, green_image)
 
 
@@ -123,7 +116,8 @@ def infer(logdir):
         with tf.name_scope('Validation'):
             image_pl, label_pl = _create_input_placeholder()
             image = tf.expand_dims(image_pl, 0)
-            softmax = core.build_inference_graph(hypes, modules, image=image)
+            softmax = core.build_inference_graph(hypes, modules,
+                                                 image=image)
 
         sess = tf.Session()
         saver = tf.train.Saver()

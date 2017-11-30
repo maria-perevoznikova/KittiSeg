@@ -59,7 +59,7 @@ import numpy as np
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 
-sys.path.insert(1, 'incl')
+sys.path.insert(1, 'submodules')
 
 import tensorvision.train as train
 import tensorvision.utils as utils
@@ -117,9 +117,6 @@ def main(_):
         mod_dict = ast.literal_eval(tf.app.flags.FLAGS.mod)
         dict_merge(hypes, mod_dict)
 
-    if 'TV_DIR_RUNS' in os.environ:
-        os.environ['TV_DIR_RUNS'] = os.path.join(os.environ['TV_DIR_RUNS'],
-                                                 'KittiSeg')
     utils.set_dirs(hypes, tf.app.flags.FLAGS.hypes)
 
     utils._add_paths_to_sys(hypes)

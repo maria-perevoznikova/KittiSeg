@@ -1,31 +1,35 @@
 {
   "model": {
-    "input_file": "../inputs/kitti_seg_input.py",
+    "input_file": "../inputs/vaihingen_seg_input.py",
     "architecture_file" : "../encoder/fcn8_vgg.py",
     "objective_file" : "../decoder/kitti_multiloss.py",
     "optimizer_file" : "../optimizer/generic_optimizer.py",
-    "evaluator_file" : "../evals/kitti_eval.py"
+    "evaluator_file" : "../evals/vaihingen_eval.py",
+    "tester_file" : "../evals/vaihingen_test.py"
   },
-  "path": ["../incl"],
+  "path": ["../submodules"],
 
   "data": {
-    "train_file" : "data_road/train3.txt",
-    "val_file" : "data_road/val3.txt",
-    "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy",
-    "kitti_url": "http://kitti.is.tue.mpg.de/kitti/data_road.zip"
+    "train_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/train/train.txt",
+    "val_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/val/val.txt",
+    "test_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/test/test.txt",
+    "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy"
   },
 
   "classes": {
-    "road_color" : [255,0,255],
-    "background_color" : [255,0,0],
-    "unknown_color": [0,0,0]
+    "impervious_surface" : [255,255,255],
+    "building" : [0,0,255],
+    "low_vegetation": [0,255,255],
+    "tree" : [0,255,0],
+    "car" : [255,255,0],
+    "background" : [255,0,0]
   },
 
   "arch": {
     "fcn_in": "fc7",
-    "num_classes" : 3,
+    "num_classes" : 6,
     "image_size" : 50,
-    "weight": [1, 1, 1],
+    "weight": [1, 1, 1, 1, 1, 1],
     "num_channels" : 3,
     "whitening": false
   },

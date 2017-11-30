@@ -20,7 +20,7 @@ logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s',
                     level=logging.INFO,
                     stream=sys.stdout)
 
-sys.path.insert(1, 'incl')
+sys.path.insert(1, 'submodules')
 
 # Please set kitti_data_url to the download link for the Kitti DATA.
 #

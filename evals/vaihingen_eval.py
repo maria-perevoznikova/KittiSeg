@@ -23,8 +23,9 @@ def eval_image(hypes, gt_image, cnn_image):
     """."""
     thresh = np.array(range(0, 256))/255.0
 
-    road_color = np.array(hypes['classes']['road_color'])
-    background_color = np.array(hypes['classes']['background_color'])
+    # TODO adjust for multi-class classification
+    road_color = np.array(hypes['classes']['building'])
+    background_color = np.array(hypes['classes']['background'])
     gt_road = np.all(gt_image == road_color, axis=2)
     gt_bg = np.all(gt_image == background_color, axis=2)
     valid_gt = gt_road + gt_bg
