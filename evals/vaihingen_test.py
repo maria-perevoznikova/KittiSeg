@@ -52,6 +52,8 @@ def create_test_output(hypes, sess, image_pl, softmax):
     logdir_rb = os.path.join(hypes['dirs']['output_dir'], logdir_rb)
     logdir_green = os.path.join(hypes['dirs']['output_dir'], logdir_green)
 
+    num_classes = hypes['arch']['num_classes']
+
     if not os.path.exists(logdir):
         os.mkdir(logdir)
 
@@ -71,20 +73,32 @@ def create_test_output(hypes, sess, image_pl, softmax):
                 feed_dict = {image_pl: image}
 
                 output = sess.run([softmax['softmax']], feed_dict=feed_dict)
-                output_im = output[0][:, 1].reshape(shape[0], shape[1])
 
-                ov_image = seg.make_overlay(image, output_im)
-                hard = output_im > 0.5
-                green_image = utils.fast_overlay(image, hard)
+                output_images = []
+                ov_images = []
+                green_images = []
+                for i in range(num_classes):
+                    output_im = output[0][:, i].reshape(shape[0], shape[1])
+                    output_images.append(output_im)
+                    ov_images.append(seg.make_overlay(image, output_im))
+                    hard = output_im > 0.5
+                    green_images.append(utils.fast_overlay(image, hard))
 
-                name = os.path.basename(image_file)
-                save_file = os.path.join(logdir, name)
-                logging.info("Writing file: %s", save_file)
-                scp.misc.imsave(save_file, output_im)
-                save_file = os.path.join(logdir_rb, name)
-                scp.misc.imsave(save_file, ov_image)
-                save_file = os.path.join(logdir_green, name)
-                scp.misc.imsave(save_file, green_image)
+                full_name = os.path.basename(image_file)
+                name = os.path.splitext(full_name)[0]
+                ext = os.path.splitext(full_name)[1]
+                logging.info("Writing file: %s", full_name)
+                for i in range(num_classes):
+                    name_i = name + str(i) + '.' + ext
+
+                    save_file = os.path.join(logdir, name_i)
+                    scp.misc.imsave(save_file, output_images[i])
+
+                    save_file = os.path.join(logdir_rb, name_i)
+                    scp.misc.imsave(save_file, ov_images[i])
+
+                    save_file = os.path.join(logdir_green, name_i)
+                    scp.misc.imsave(save_file, green_images[i])
 
 
 def _create_input_placeholder():
