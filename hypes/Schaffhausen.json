@@ -38,7 +38,7 @@
   },
 
   "jitter": {
-    "random_resize": true,
+    "random_resize": false,
     "lower_size": 0.4,
     "upper_size": 1.7,
     "sig": 0.15,
@@ -58,11 +58,11 @@
   },
 
   "logging": {
-    "display_iter": 5,
-    "eval_iter": 10,
-    "write_iter": 10,
-    "save_iter": 50,
-    "image_iter": 10
+    "display_iter": 20,
+    "eval_iter": 100,
+    "write_iter": 100,
+    "save_iter": 2000,
+    "image_iter": 20000
   },
 
   "solver": {
@@ -73,7 +73,7 @@
       "threads": 4,
       "learning_rate": 1e-5,
       "learning_rate_step": null,
-      "max_steps": 10
+      "max_steps": 12000
   },
   "use_fc_wd": true,
   "loss": "xentropy",
