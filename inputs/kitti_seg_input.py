@@ -147,25 +147,22 @@ def _make_data_gen(hypes, phase, data_dir):
 
     data_file = os.path.join(data_dir, data_file)
 
-    classes = hypes['classes']
-    num_classes = len(classes)
-    assert num_classes > 1, "Min amount of segmentation classes is 2 but only %d class(es) is defined" % num_classes
+    road_color = np.array(hypes['data']['road_color'])
+    background_color = np.array(hypes['data']['background_color'])
 
     data = _load_gt_file(hypes, data_file)
 
     for image, gt_image in data:
 
-        gt_classes = []
-        for color in classes.values():
-            gt_classes.append(np.all(gt_image == color, axis=2))
-        assert(gt_classes[0].shape == gt_classes[-1].shape)
+        gt_bg = np.all(gt_image == background_color, axis=2)
+        gt_road = np.all(gt_image == road_color, axis=2)
 
-        gt_reshaped = []
-        shape = gt_classes[0].shape
-        for gt_class in gt_classes:
-            gt_reshaped.append(gt_class.reshape(shape[0], shape[1], 1))
+        assert(gt_road.shape == gt_bg.shape)
+        shape = gt_bg.shape
+        gt_bg = gt_bg.reshape(shape[0], shape[1], 1)
+        gt_road = gt_road.reshape(shape[0], shape[1], 1)
 
-        gt_image = np.concatenate(gt_reshaped, axis=2)
+        gt_image = np.concatenate((gt_bg, gt_road), axis=2)
 
         if phase == 'val':
             yield image, gt_image
