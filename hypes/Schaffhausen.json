@@ -4,8 +4,8 @@
     "architecture_file" : "../encoder/fcn8_vgg.py",
     "objective_file" : "../decoder/kitti_multiloss.py",
     "optimizer_file" : "../optimizer/generic_optimizer.py",
-    "evaluator_file" : "../evals/vaihingen_eval.py",
-    "tester_file" : "../evals/vaihingen_test.py"
+    "evaluator_file" : "../evals/schaffhausen_eval.py",
+    "tester_file" : "../evals/schaffhausen_test.py"
   },
   "path": ["../submodules"],
 
