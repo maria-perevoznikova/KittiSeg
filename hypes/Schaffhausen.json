@@ -2,7 +2,7 @@
   "model": {
     "input_file": "../inputs/vaihingen_seg_input.py",
     "architecture_file" : "../encoder/fcn8_vgg.py",
-    "objective_file" : "../decoder/kitti_multiloss.py",
+    "objective_file" : "../decoder/multiclass_loss.py",
     "optimizer_file" : "../optimizer/generic_optimizer.py",
     "evaluator_file" : "../evals/schaffhausen_eval.py",
     "tester_file" : "../evals/schaffhausen_test.py"
