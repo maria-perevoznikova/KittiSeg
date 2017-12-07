@@ -11,7 +11,6 @@ import os
 import numpy as np
 import scipy as scp
 import tensorvision.utils as utils
-from seg_utils import seg_utils as seg
 
 
 def eval_image(hypes, gt_image, output_image):
@@ -55,6 +54,15 @@ def evaluate(hypes, sess, image_pl, inf_out):
     data_dir = hypes['dirs']['data_dir']
     num_classes = hypes['arch']['num_classes']
 
+    # create colormap
+    classes = hypes['classes']
+    color_dict = {"default": [0, 0, 0, 0]}
+    for k, v in enumerate(classes.values()):
+        # add alpha channel
+        color = list(v)
+        color.append(127)
+        color_dict[k] = color
+
     for phase in ['train', 'val']:
         data_file = hypes['data']['{}_file'.format(phase)]
         data_file = os.path.join(data_dir, data_file)
@@ -66,7 +74,6 @@ def evaluate(hypes, sess, image_pl, inf_out):
         total_fn = np.zeros(num_classes)
 
         image_list = []
-        im_count = -1
         with open(data_file) as file:
             for i, datum in enumerate(file):
                 datum = datum.rstrip()
@@ -87,18 +94,17 @@ def evaluate(hypes, sess, image_pl, inf_out):
                 output_im = output[0]
                 output_im = _fix_shape_jitter(hypes, gt_image, output_im, shape)
 
-                # TODO enable
-                # _save_plot(image, image_file, image_list, output_im, phase)
-
                 # gt_image shape [H W n_chan]
                 # output_im shape [HxW n_cl]
                 tp, fp, tn, fn = eval_image(hypes, gt_image, output_im)
-
                 total_tp += tp
                 total_fp += fp
                 total_tn += tn
                 total_fn += fn
-                im_count = i
+
+                if phase == 'val':
+                    _save_plot(image, output_im, color_dict, image_file, image_list)
+
 
     eval_list = []
     for phase in ['train', 'val']:
@@ -108,12 +114,11 @@ def evaluate(hypes, sess, image_pl, inf_out):
             tn = total_tn[i]
             fn = total_fn[i]
             total = tp + fp + tn + fn
-            eval_list.append(('[{}] TP class {}'.format(phase, i), tp / total))
-            eval_list.append(('[{}] FP class {}'.format(phase, i), fp / total))
-            eval_list.append(('[{}] TN class {}'.format(phase, i), tn / total))
-            eval_list.append(('[{}] FN class {}'.format(phase, i), fn / total))
-            eval_list.append(('[{}] IoU class {}'.format(phase, i), tp / (tp + fp + fn)))
-            eval_list.append(('[{}] Total class {}'.format(phase, i), total))
+            eval_list.append(('[{}] TP {}'.format(phase, i), tp / total))
+            eval_list.append(('[{}] FP {}'.format(phase, i), fp / total))
+            eval_list.append(('[{}] TN {}'.format(phase, i), tn / total))
+            eval_list.append(('[{}] FN {}'.format(phase, i), fn / total))
+            eval_list.append(('[{}] IoU {}'.format(phase, i), tp / (tp + fp + fn)))
 
         tp_ = np.sum(total_tp)
         fp_ = np.sum(total_fp)
@@ -125,29 +130,30 @@ def evaluate(hypes, sess, image_pl, inf_out):
         eval_list.append(('[{}] FP total '.format(phase), fp_ / total))
         eval_list.append(('[{}] TN total '.format(phase), tn_ / total))
         eval_list.append(('[{}] FN total '.format(phase), fn_ / total))
-        eval_list.append(('[{}] Total '.format(phase), total))
 
         eval_list.append(('[{}] Acc. '.format(phase), (tn_ + tp_) / total))
         eval_list.append(('[{}] IoU '.format(phase), tp_ / (tp_ + fp_ + fn_)))
 
-        eval_list.append(('[{}] # images '.format(phase), im_count + 1))
-
     return eval_list, image_list
 
 
-def _save_plot(image, image_file, image_list, output_im, phase):
-    if phase == 'val':
-        # TODO adjust
-        # Saving RB Plot
-        ov_image = seg.make_overlay(image, output_im)
-        name = os.path.basename(image_file)
-        image_list.append((name, ov_image))
+def _save_plot(image, output_im, color_dict, image_file, image_list):
+    # image shape [H W n_chan], output_im (softmax) shape [HxW n_cl]
 
-        name2 = name.split('.')[0] + '_green.png'
+    # keep values with probabilities > 0.5
+    hard = output_im > 0.5
+    hard_mask = np.sum(hard, axis=1) > 0
+    segm_mask = np.argmax(output_im, axis=1) + 1
+    # '-1' for unknown class (probability value < 0.5)
+    segm_mask = segm_mask*hard_mask - 1
+    segm_mask = np.reshape(segm_mask, (image.shape[0], image.shape[1]))
 
-        hard = output_im > 0.5
-        green_image = utils.fast_overlay(image, hard)
-        image_list.append((name2, green_image))
+    # Saving overlay image
+    ov_image = utils.overlay_segmentation(image, segm_mask, color_dict)
+    name = os.path.basename(image_file)
+    filename, file_extension = os.path.splitext(name)
+    new_name = filename + '_segm' + file_extension
+    image_list.append((new_name, ov_image))
 
 
 def _fix_shape_jitter(hypes, gt_image, output_im, shape):
