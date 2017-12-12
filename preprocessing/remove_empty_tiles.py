@@ -18,7 +18,8 @@ def main():
 
     # move image with more than 95% black pixels to other folder
     count = 0
-    black = np.zeros(3, dtype=np.uint8)
+    # black = np.zeros(3, dtype=np.uint8)
+    black = 255 * np.ones(3, dtype=np.uint8)
     for file_name in input_files:
         gt_file = os.path.join(input_folder, file_name)
         gt_image = scp.misc.imread(gt_file, mode='RGB')
