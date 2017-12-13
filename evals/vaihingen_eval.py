@@ -152,8 +152,13 @@ def _save_plot(image, output_im, color_dict, image_file, image_list):
     ov_image = utils.overlay_segmentation(image, segm_mask, color_dict)
     name = os.path.basename(image_file)
     filename, file_extension = os.path.splitext(name)
-    new_name = filename + '_segm' + file_extension
-    image_list.append((new_name, ov_image))
+    ov_name = filename + '_overlay' + file_extension
+    image_list.append((ov_name, ov_image))
+
+    # Saving segmentation image
+    seg_image = utils.segmentation_rgb(segm_mask, color_dict)
+    seg_name = filename + '_segm' + file_extension
+    image_list.append((seg_name, seg_image))
 
 
 def _fix_shape_jitter(hypes, gt_image, output_im, shape):

@@ -436,6 +436,42 @@ def overlay_segmentation(input_image, segmentation, color_dict):
     return np.array(background)
 
 
+def segmentation_rgb(segmentation, color_dict):
+    """
+    Overlay input_image with a hard segmentation result.
+
+    Store the result with the same name as segmentation_image, but with
+    `-overlay`.
+
+    Parameters
+    ----------
+    segmentation : numpy.array
+        Segmentation of shape [width, height].
+    color_changes : dict
+        The key is the class and the value is the color which will be used in
+        the overlay. Each color has to be a tuple (r, g, b, a) with
+        r, g, b, a in {0, 1, ..., 255}.
+        It is recommended to choose a = 0 for (invisible) background and
+        a = 127 for all other classes.
+
+    Returns
+    -------
+    numpy.array
+        The image overlayed with the segmenation
+    """
+    width, height = segmentation.shape
+    output = scipy.misc.toimage(segmentation)
+    output = output.convert('RGB')
+    for x in range(0, width):
+        for y in range(0, height):
+            if segmentation[x, y] in color_dict:
+                output.putpixel((y, x), tuple(color_dict[segmentation[x, y]])[:3])
+            elif 'default' in color_dict:
+                output.putpixel((y, x), tuple(color_dict['default'])[:3])
+
+    return np.array(output)
+
+
 def fast_overlay(input_image, segmentation, color=[0, 255, 0, 127]):
     """
     Overlay input_image with a hard segmentation result for two classes.
