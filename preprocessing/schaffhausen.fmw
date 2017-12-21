@@ -12,54 +12,54 @@
 #          --DestDataset_PNGRASTER "C:\Projects\VP2\MLdata\orthos_tiles\1"
 #          --SourceDataset_TIFF_7 """"""C:\Projects\VP2\MLdata\_orthos\*.tif"" ""C:\Projects\VP2\MLdata\_orthos\*.tiff"" ""C:\Projects\VP2\MLdata\_orthos\*.itiff"" ""C:\Projects\VP2\MLdata\_orthos\*.ovr""""""
 #          --DestDataset_PNGRASTER_8 "C:\Projects\VP2\MLdata\_orthos_3bands"
-#          --SourceDataset_TIFF_6 """"""C:\Projects\VP2\MLdata\_gt\*.tif"" ""C:\Projects\VP2\MLdata\_gt\*.tiff"" ""C:\Projects\VP2\MLdata\_gt\*.itiff"" ""C:\Projects\VP2\MLdata\_gt\*.ovr""""""
+#          --SourceDataset_TIFF_6 """"""C:\Projects\VP2\MLdata\_gt1\*.tif"" ""C:\Projects\VP2\MLdata\_gt1\*.tiff"" ""C:\Projects\VP2\MLdata\_gt1\*.itiff"" ""C:\Projects\VP2\MLdata\_gt1\*.ovr""""""
 #          --SourceDataset_PNGRASTER "C:\Projects\VP2\MLdata\_orthos_3bands\*.png"
-#          --SourceDataset_PNGRASTER_2 "C:\Projects\VP2\MLdata\_gt_color\*.png"
+#          --SourceDataset_PNGRASTER_2 "C:\Projects\VP2\MLdata\_gt1_color\*.png"
 #    
 #    
-#! VIEW_POSITION="-131.656 748.928"
-#! END_PYTHON=""
-#! LAST_SAVE_DATE="2017-12-11T13:17:37"
-#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#! LEGAL_TERMS_CONDITIONS=""
-#! ZOOM_SCALE="139"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! ATTR_TYPE_ENCODING="SDF"
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! DESTINATION_ROUTING_FILE=""
+#! HISTORY=""
+#! FME_BUILD_NUM="15250"
+#! DOC_TOP_LEFT="84.4215 -1999.09"
+#! MAX_LOG_FEATURES="200"
 #! LAST_SAVE_BUILD="FME(R) 2015.0 (20150126 - Build 15250 - WIN64)"
-#! LOG_MAX_PRECISION="Yes"
-#! USAGE=""
-#! WORKSPACE_VERSION="1"
-#! MULTI_WRITER_DATASET_ORDER="BY_ID"
-#! REQUIREMENTS=""
+#! VIEW_POSITION="-127.339 744.612"
+#! LEGAL_TERMS_CONDITIONS=""
 #! FME_STROKE_MAX_DEVIATION="0"
-#! SHOW_INFO_NODES="true"
+#! END_PYTHON=""
+#! BEGIN_TCL=""
+#! LOG_MAX_PRECISION="Yes"
 #! LOG_FILE=""
 #! CATEGORY=""
-#! WARN_INVALID_XFORM_PARAM="Yes"
-#! BEGIN_TCL=""
-#! FME_REPROJECTION_ENGINE="FME"
-#! FME_GEOMETRY_HANDLING="Enhanced"
-#! BEGIN_PYTHON=""
-#! DESTINATION="NONE"
-#! DESCRIPTION=""
-#! LOG_MAX_RECORDED_FEATURES="200"
-#! MAX_LOG_FEATURES="200"
-#! DESTINATION_ROUTING_FILE=""
-#! FME_SERVER_SERVICES=""
-#! SHOW_ANNOTATIONS="true"
-#! FME_DOCUMENT_PRIORGUID="430a006e-fe96-4b5f-99bf-fc36aa29cb3c,ae67a90e-e8b0-4603-a4df-2e5b9f0369da,8a84052f-4dc0-4535-bdc9-2337b7f86eef,69fae6d0-3676-46af-b446-52645a59e39b,61314f59-ea84-4f68-a83e-e4747023b5b4,0f3f04a4-5c3c-4710-ac00-a1a4a688c3c4,37ac2669-3f02-49a0-b19a-7f7fc1849e90,e6ee7f60-5f4e-41a6-bf67-9d0b123b3855,a5c4ca20-fa91-4e2e-83ee-00a5ca49d533,c7fe76c8-2eac-4487-a489-ff2ee2cab6e3,32b9bda6-7d3e-4fa0-ac51-41bb4e56ae67,5f09ac8e-5ac5-4478-9ed8-f8001e7477f6,6d6d6aef-488c-4e40-8ec0-180983b048c9,8a662ae8-3044-419e-8cfe-7061afa8768f,57a6f1f1-0ec7-4671-a11d-71af29efd351,327beaaa-30d9-4748-8dbb-1effebaf6933,4e75dc2c-f3c3-4cf3-b9c3-c13fe2023441,803ba012-fb0c-431c-9702-06f0618c0534,8966ee98-3f7c-4da5-894e-e12bcc423e1c"
-#! DOC_TOP_LEFT="84.4215 -1999.09"
-#! FME_DOCUMENT_GUID="ba184102-b879-409b-b570-bb7f969c73aa"
+#! WORKSPACE_VERSION="1"
 #! TITLE=""
-#! END_TCL=""
-#! SOURCE_ROUTING_FILE=""
-#! PASSWORD=""
-#! REQUIREMENTS_KEYWORD=""
-#! SOURCE="NONE"
-#! ATTR_TYPE_ENCODING="SDF"
-#! FME_BUILD_NUM="15250"
-#! IGNORE_READER_FAILURE="No"
+#! DESTINATION="NONE"
 #! REDIRECT_TERMINATORS="NONE"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! DESCRIPTION=""
+#! IGNORE_READER_FAILURE="No"
+#! MULTI_WRITER_DATASET_ORDER="BY_ID"
+#! REQUIREMENTS=""
+#! LAST_SAVE_DATE="2017-12-13T13:59:43"
+#! FME_SERVER_SERVICES=""
+#! FME_REPROJECTION_ENGINE="FME"
+#! END_TCL=""
+#! REQUIREMENTS_KEYWORD=""
+#! SHOW_ANNOTATIONS="true"
+#! PASSWORD=""
+#! SOURCE="NONE"
+#! FME_DOCUMENT_PRIORGUID="430a006e-fe96-4b5f-99bf-fc36aa29cb3c,ae67a90e-e8b0-4603-a4df-2e5b9f0369da,8a84052f-4dc0-4535-bdc9-2337b7f86eef,69fae6d0-3676-46af-b446-52645a59e39b,61314f59-ea84-4f68-a83e-e4747023b5b4,0f3f04a4-5c3c-4710-ac00-a1a4a688c3c4,37ac2669-3f02-49a0-b19a-7f7fc1849e90,e6ee7f60-5f4e-41a6-bf67-9d0b123b3855,a5c4ca20-fa91-4e2e-83ee-00a5ca49d533,c7fe76c8-2eac-4487-a489-ff2ee2cab6e3,32b9bda6-7d3e-4fa0-ac51-41bb4e56ae67,5f09ac8e-5ac5-4478-9ed8-f8001e7477f6,6d6d6aef-488c-4e40-8ec0-180983b048c9,8a662ae8-3044-419e-8cfe-7061afa8768f,57a6f1f1-0ec7-4671-a11d-71af29efd351,327beaaa-30d9-4748-8dbb-1effebaf6933,4e75dc2c-f3c3-4cf3-b9c3-c13fe2023441,803ba012-fb0c-431c-9702-06f0618c0534,8966ee98-3f7c-4da5-894e-e12bcc423e1c,ba184102-b879-409b-b570-bb7f969c73aa,432262cb-ddc0-431a-b0c2-714960f81cd1"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! SHOW_INFO_NODES="true"
+#! USAGE=""
+#! BEGIN_PYTHON=""
+#! FME_DOCUMENT_GUID="92f56deb-a457-4316-9848-94706d584372"
+#! ZOOM_SCALE="139"
+#! SOURCE_ROUTING_FILE=""
 #! DOC_EXTENTS="3773.9 2618.4"
-#! HISTORY=""
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -75,7 +75,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE=""
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_rotation float fme_fill_color char(50) tiff_number_of_bits_per_cell decimal(1,0) fme_geometry fme_char(50) tiff_interleaving_type char(3) tiff_hostcomputer char(255) fme_type char(50) fme_color char(50) tiff_type char(255) multi_reader_keyword char(50) tiff_yresolution float fme_feature_type char(50) fme_dataset char(50) tiff_datetime datetime tiff_artist char(255) fme_text_size float multi_reader_id integer fme_start_angle float tiff_documentname char(255) fme_sweep_angle float tiff_minsamplevalue integer multi_reader_full_id integer tiff_subdataset_description char(255) fme_text_string char(50) fme_primary_axis float tiff_byte_order char(7) tiff_copyright char(255) multi_reader_type char(50) fme_secondary_axis float tiff_photometric_interpretation char(10) tiff_resolutionunit decimal(1,0) tiff_imagedescription char(255) tiff_subdataset_name char(255) tiff_software char(255) tiff_xresolution float tiff_area_or_point char(255) tiff_maxsamplevalue integer fme_basename char(50) tiff_compression_method char(9)"
+#! EXPOSABLE_ATTRS="tiff_xresolution float fme_secondary_axis float tiff_software char(255) tiff_area_or_point char(255) fme_text_size float fme_fill_color char(50) fme_color char(50) multi_reader_keyword char(50) tiff_type char(255) fme_type char(50) tiff_subdataset_name char(255) tiff_artist char(255) tiff_number_of_bits_per_cell decimal(1,0) tiff_copyright char(255) tiff_hostcomputer char(255) fme_basename char(50) tiff_imagedescription char(255) tiff_resolutionunit decimal(1,0) fme_rotation float multi_reader_id integer fme_start_angle float tiff_photometric_interpretation char(10) fme_geometry fme_char(50) multi_reader_full_id integer tiff_maxsamplevalue integer tiff_datetime datetime fme_sweep_angle float tiff_documentname char(255) fme_text_string char(50) tiff_minsamplevalue integer tiff_byte_order char(7) fme_dataset char(50) tiff_compression_method char(9) tiff_subdataset_description char(255) tiff_interleaving_type char(3) fme_primary_axis float multi_reader_type char(50) tiff_yresolution float fme_feature_type char(50)"
 #! DEFLINE_PARMS=""
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=""
@@ -84,28 +84,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! MAX_FEATURES=""
-#! START_FEATURE=""
 #! MIN_FEATURES=""
-#! MAX_FEATURES_PER_FEATURE_TYPE=""
-#! FEATURE_TYPES=""
+#! MAX_FEATURES=""
 #! COORDSYS=""
+#! FEATURE_TYPES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! START_FEATURE=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/tiff"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the TIFF file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/tiff"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -122,6 +118,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -141,7 +141,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE=""
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_rotation float fme_fill_color char(50) tiff_number_of_bits_per_cell decimal(1,0) fme_geometry fme_char(50) tiff_interleaving_type char(3) tiff_hostcomputer char(255) fme_type char(50) fme_color char(50) tiff_type char(255) multi_reader_keyword char(50) tiff_yresolution float fme_feature_type char(50) fme_dataset char(50) tiff_datetime datetime tiff_artist char(255) fme_text_size float multi_reader_id integer fme_start_angle float tiff_documentname char(255) fme_sweep_angle float tiff_minsamplevalue integer multi_reader_full_id integer tiff_subdataset_description char(255) fme_text_string char(50) fme_primary_axis float tiff_byte_order char(7) tiff_copyright char(255) multi_reader_type char(50) fme_secondary_axis float tiff_photometric_interpretation char(10) tiff_resolutionunit decimal(1,0) tiff_imagedescription char(255) tiff_subdataset_name char(255) tiff_software char(255) tiff_xresolution float tiff_area_or_point char(255) tiff_maxsamplevalue integer fme_basename char(50) tiff_compression_method char(9)"
+#! EXPOSABLE_ATTRS="tiff_xresolution float fme_secondary_axis float tiff_software char(255) tiff_area_or_point char(255) fme_text_size float fme_fill_color char(50) fme_color char(50) multi_reader_keyword char(50) tiff_type char(255) fme_type char(50) tiff_subdataset_name char(255) tiff_artist char(255) tiff_number_of_bits_per_cell decimal(1,0) tiff_copyright char(255) tiff_hostcomputer char(255) fme_basename char(50) tiff_imagedescription char(255) tiff_resolutionunit decimal(1,0) fme_rotation float multi_reader_id integer fme_start_angle float tiff_photometric_interpretation char(10) fme_geometry fme_char(50) multi_reader_full_id integer tiff_maxsamplevalue integer tiff_datetime datetime fme_sweep_angle float tiff_documentname char(255) fme_text_string char(50) tiff_minsamplevalue integer tiff_byte_order char(7) fme_dataset char(50) tiff_compression_method char(9) tiff_subdataset_description char(255) tiff_interleaving_type char(3) fme_primary_axis float multi_reader_type char(50) tiff_yresolution float fme_feature_type char(50)"
 #! DEFLINE_PARMS=""
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=""
@@ -150,28 +150,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! MAX_FEATURES=""
-#! START_FEATURE=""
 #! MIN_FEATURES=""
-#! MAX_FEATURES_PER_FEATURE_TYPE=""
-#! FEATURE_TYPES=""
+#! MAX_FEATURES=""
 #! COORDSYS=""
+#! FEATURE_TYPES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! START_FEATURE=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/tiff"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the TIFF file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/tiff"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -188,6 +184,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -207,7 +207,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE=""
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_title char(255) fme_primary_axis float pngraster_copyright char(255) multi_reader_full_id integer pngraster_software char(255) pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) pngraster_description char(255) fme_rotation float multi_reader_id integer multi_reader_type char(50) multi_reader_keyword char(50) fme_start_angle float fme_secondary_axis float pngraster_disclaimer char(255) fme_type char(50) fme_color char(50) pngraster_author char(255) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float multi_reader_id integer fme_rotation float multi_reader_type char(50) fme_type char(50) fme_start_angle float pngraster_description char(255) pngraster_disclaimer char(255) multi_reader_keyword char(50) pngraster_software char(255) fme_color char(50) fme_feature_type char(50) pngraster_title char(255) fme_basename char(50) fme_sweep_angle float fme_geometry fme_char(50) fme_fill_color char(50) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) multi_reader_full_id integer pngraster_author char(255) fme_secondary_axis float fme_primary_axis float pngraster_copyright char(255)"
 #! DEFLINE_PARMS=""
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=""
@@ -216,28 +216,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! MAX_FEATURES=""
-#! START_FEATURE=""
 #! MIN_FEATURES=""
-#! MAX_FEATURES_PER_FEATURE_TYPE=""
-#! FEATURE_TYPES=""
+#! MAX_FEATURES=""
 #! COORDSYS=""
+#! FEATURE_TYPES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! START_FEATURE=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -254,6 +250,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -273,7 +273,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE=""
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_title char(255) fme_primary_axis float pngraster_copyright char(255) multi_reader_full_id integer pngraster_software char(255) pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) pngraster_description char(255) fme_rotation float multi_reader_id integer multi_reader_type char(50) multi_reader_keyword char(50) fme_start_angle float fme_secondary_axis float pngraster_disclaimer char(255) fme_type char(50) fme_color char(50) pngraster_author char(255) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float multi_reader_id integer fme_rotation float multi_reader_type char(50) fme_type char(50) fme_start_angle float pngraster_description char(255) pngraster_disclaimer char(255) multi_reader_keyword char(50) pngraster_software char(255) fme_color char(50) fme_feature_type char(50) pngraster_title char(255) fme_basename char(50) fme_sweep_angle float fme_geometry fme_char(50) fme_fill_color char(50) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) multi_reader_full_id integer pngraster_author char(255) fme_secondary_axis float fme_primary_axis float pngraster_copyright char(255)"
 #! DEFLINE_PARMS=""
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=""
@@ -282,28 +282,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! MAX_FEATURES=""
-#! START_FEATURE=""
 #! MIN_FEATURES=""
-#! MAX_FEATURES_PER_FEATURE_TYPE=""
-#! FEATURE_TYPES=""
+#! MAX_FEATURES=""
 #! COORDSYS=""
+#! FEATURE_TYPES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! START_FEATURE=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -320,6 +316,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -339,7 +339,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_primary_axis float pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) fme_rotation float pngraster_optimize char(3) pngraster_world_file_generation char(3) fme_start_angle float fme_secondary_axis float fme_type char(50) fme_color char(50) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_type char(50) fme_start_angle float fme_color char(50) fme_feature_type char(50) fme_basename char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_geometry fme_char(50) fme_fill_color char(50) pngraster_world_file_generation char(3) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) fme_secondary_axis float pngraster_optimize char(3) fme_primary_axis float"
 #! DEFLINE_PARMS="&quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -348,28 +348,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! FANOUT_DIRECTORY=""
-#! FANOUT_ID_ATTR=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_PREFIX=""
+#! FANOUT_ID_ATTR=""
 #! COORDSYS=""
+#! FANOUT_DIRECTORY=""
+#! FANOUT_SUFFIX=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -382,6 +378,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -401,7 +401,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_primary_axis float pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) fme_rotation float pngraster_optimize char(3) pngraster_world_file_generation char(3) fme_start_angle float fme_secondary_axis float fme_type char(50) fme_color char(50) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_type char(50) fme_start_angle float fme_color char(50) fme_feature_type char(50) fme_basename char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_geometry fme_char(50) fme_fill_color char(50) pngraster_world_file_generation char(3) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) fme_secondary_axis float pngraster_optimize char(3) fme_primary_axis float"
 #! DEFLINE_PARMS="&quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -410,28 +410,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! FANOUT_DIRECTORY=""
-#! FANOUT_ID_ATTR=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_PREFIX=""
+#! FANOUT_ID_ATTR=""
 #! COORDSYS=""
+#! FANOUT_DIRECTORY=""
+#! FANOUT_SUFFIX=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -444,6 +440,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -463,7 +463,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_primary_axis float pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) fme_rotation float pngraster_optimize char(3) pngraster_world_file_generation char(3) fme_start_angle float fme_secondary_axis float fme_type char(50) fme_color char(50) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_type char(50) fme_start_angle float fme_color char(50) fme_feature_type char(50) fme_basename char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_geometry fme_char(50) fme_fill_color char(50) pngraster_world_file_generation char(3) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) fme_secondary_axis float pngraster_optimize char(3) fme_primary_axis float"
 #! DEFLINE_PARMS="&quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -472,28 +472,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! FANOUT_DIRECTORY=""
-#! FANOUT_ID_ATTR=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_PREFIX=""
+#! FANOUT_ID_ATTR=""
 #! COORDSYS=""
+#! FANOUT_DIRECTORY=""
+#! FANOUT_SUFFIX=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -506,6 +502,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -525,7 +525,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_primary_axis float pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) fme_rotation float pngraster_optimize char(3) pngraster_world_file_generation char(3) fme_start_angle float fme_secondary_axis float fme_type char(50) fme_color char(50) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_type char(50) fme_start_angle float fme_color char(50) fme_feature_type char(50) fme_basename char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_geometry fme_char(50) fme_fill_color char(50) pngraster_world_file_generation char(3) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) fme_secondary_axis float pngraster_optimize char(3) fme_primary_axis float"
 #! DEFLINE_PARMS="&quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -534,28 +534,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! FANOUT_DIRECTORY=""
-#! FANOUT_ID_ATTR=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_PREFIX=""
+#! FANOUT_ID_ATTR=""
 #! COORDSYS=""
+#! FANOUT_DIRECTORY=""
+#! FANOUT_SUFFIX=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -568,6 +564,10 @@
 #! <METAFILE_PARAMETER
 #! NAME="AUTO_FANOUT_ATTRIBUTE"
 #! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
@@ -587,7 +587,7 @@
 #! WRITE_DEFS="true"
 #! DEFLINE_TEMPLATE="pngraster_world_file_generation $(_PNGRASTER_WRITER_WORLD_FILE_GENERATION) pngraster_tab_file_generation $(_PNGRASTER_WRITER_TAB_FILE_GENERATION) pngraster_optimize $(_PNGRASTER_WRITER_OPTIMIZE)"
 #! DEFLINE_ATTRS="true"
-#! EXPOSABLE_ATTRS="fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_primary_axis float pngraster_type char(255) fme_text_size float fme_text_string char(50) fme_feature_type char(50) fme_rotation float pngraster_optimize char(3) pngraster_world_file_generation char(3) fme_start_angle float fme_secondary_axis float fme_type char(50) fme_color char(50) fme_fill_color char(50) fme_dataset char(50)"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_type char(50) fme_start_angle float fme_color char(50) fme_feature_type char(50) fme_basename char(50) fme_sweep_angle float pngraster_tab_file_generation char(3) fme_geometry fme_char(50) fme_fill_color char(50) pngraster_world_file_generation char(3) pngraster_type char(255) fme_text_string char(50) fme_dataset char(50) fme_secondary_axis float pngraster_optimize char(3) fme_primary_axis float"
 #! DEFLINE_PARMS="&quot;GUI CHOICE pngraster_world_file_generation yes%no World File Generation&quot; yes &quot;GUI CHOICE pngraster_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI CHOICE pngraster_optimize No_optimization%Level_1_(recommended)%Level_2%Level_3%Level_4%Level_5%Level_6%Level_7_(slow) PNG Optimization Level (reduces file size)&quot; No_optimization "
 #! ATTR_INDEX_TYPES=""
 #! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
@@ -596,28 +596,24 @@
 #! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #! DATASET_TYPE="FILEDIR"
 #! GENERATE_FME_BUILD_NUM="15250"
-#! FANOUT_DIRECTORY=""
-#! FANOUT_ID_ATTR=""
 #! FANOUT="No"
-#! FANOUT_SUFFIX=""
 #! FANOUT_PREFIX=""
+#! FANOUT_ID_ATTR=""
 #! COORDSYS=""
+#! FANOUT_DIRECTORY=""
+#! FANOUT_SUFFIX=""
 #! >
-#! <METAFILE_PARAMETER
-#! NAME="FEATURE_TYPE_NAME"
-#! VALUE="Raster File"
-#! />
 #! <METAFILE_PARAMETER
 #! NAME="READER_AUTO_EXPOSE"
 #! VALUE="fme_basename char(50)"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="MIME_TYPE"
-#! VALUE="image/PNG"
-#! />
-#! <METAFILE_PARAMETER
 #! NAME="WRITER_DATASET_HINT"
 #! VALUE="Specify a folder for the PNG raster file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/PNG"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="FEATURE_TYPE_DEFAULT_NAME"
@@ -632,6 +628,10 @@
 #! VALUE="fme_basename"
 #! />
 #! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
+#! />
+#! <METAFILE_PARAMETER
 #! NAME="READER_DATASET_HINT"
 #! VALUE="Select the PNG raster file(s)"
 #! />
@@ -642,217 +642,217 @@
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(width)"
 #! FME_TYPE="fme_varchar(width)"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(width)"
 #! FME_TYPE="fme_char(width)"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(254)"
 #! FME_TYPE="fme_buffer"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(1)"
 #! FME_TYPE="fme_char(width)"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="datetime"
 #! FME_TYPE="fme_datetime"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="time"
 #! FME_TYPE="fme_time"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="date"
 #! FME_TYPE="fme_date"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(width,decimal)"
 #! FME_TYPE="fme_decimal(width,decimal)"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="float"
 #! FME_TYPE="fme_real64"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="float"
 #! FME_TYPE="fme_real32"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="integer"
 #! FME_TYPE="fme_int32"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(11,0)"
 #! FME_TYPE="fme_uint32"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(20,0)"
 #! FME_TYPE="fme_int64"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(20,0)"
 #! FME_TYPE="fme_uint64"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="logical"
 #! FME_TYPE="fme_boolean"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="smallint"
 #! FME_TYPE="fme_int16"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="integer"
 #! FME_TYPE="fme_uint16"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="smallint"
 #! FME_TYPE="fme_uint8"
-#! FORMAT="PNGRASTER"
+#! FORMAT="TIFF"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(width)"
 #! FME_TYPE="fme_varchar(width)"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(width)"
 #! FME_TYPE="fme_char(width)"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(254)"
 #! FME_TYPE="fme_buffer"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="char(1)"
 #! FME_TYPE="fme_char(width)"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="datetime"
 #! FME_TYPE="fme_datetime"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="time"
 #! FME_TYPE="fme_time"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="date"
 #! FME_TYPE="fme_date"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(width,decimal)"
 #! FME_TYPE="fme_decimal(width,decimal)"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="float"
 #! FME_TYPE="fme_real64"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="float"
 #! FME_TYPE="fme_real32"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="integer"
 #! FME_TYPE="fme_int32"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(11,0)"
 #! FME_TYPE="fme_uint32"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(20,0)"
 #! FME_TYPE="fme_int64"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="decimal(20,0)"
 #! FME_TYPE="fme_uint64"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="logical"
 #! FME_TYPE="fme_boolean"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="smallint"
 #! FME_TYPE="fme_int16"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="integer"
 #! FME_TYPE="fme_uint16"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="true"
 #! FORMAT_TYPE="smallint"
 #! FME_TYPE="fme_uint8"
-#! FORMAT="TIFF"
+#! FORMAT="PNGRASTER"
 #! />
 #! <DATA_TYPE
 #! IS_SOURCE="false"
@@ -966,96 +966,6 @@
 #! <GEOM_TYPES>
 #! <GEOM_TYPE
 #! IS_SOURCE="true"
-#! FORMAT_TYPE="pngraster_raster"
-#! FME_TYPE="fme_raster"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="pngraster_none"
-#! FME_TYPE="fme_no_geom"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_point"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_text"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_line"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_arc"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_area"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_ellipse"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_rectangle"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_rounded_rectangle"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_no_geom"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_surface"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_solid"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="fme_no_map"
-#! FME_TYPE="fme_point_cloud"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
-#! FORMAT_TYPE="pngraster_none"
-#! FME_TYPE="fme_collection"
-#! FORMAT="PNGRASTER"
-#! />
-#! <GEOM_TYPE
-#! IS_SOURCE="true"
 #! FORMAT_TYPE="tiff_raster"
 #! FME_TYPE="fme_raster"
 #! FORMAT="TIFF"
@@ -1143,6 +1053,96 @@
 #! FORMAT_TYPE="tiff_none"
 #! FME_TYPE="fme_collection"
 #! FORMAT="TIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="pngraster_raster"
+#! FME_TYPE="fme_raster"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="pngraster_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_text"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_line"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_arc"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_area"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_surface"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_solid"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="PNGRASTER"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="pngraster_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="PNGRASTER"
 #! />
 #! <GEOM_TYPE
 #! IS_SOURCE="false"
@@ -1491,7 +1491,7 @@
 #! />
 #! <GLOBAL_PARAMETER
 #! GUI_LINE="GUI MULTIFILE SourceDataset_TIFF_6 TIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|All_Files(*)|* Source TIFF (Tagged Image File Format) File(s):"
-#! DEFAULT_VALUE="&quot;&quot;C:\Projects\VP2\MLdata\_gt\*.tif&quot; &quot;C:\Projects\VP2\MLdata\_gt\*.tiff&quot; &quot;C:\Projects\VP2\MLdata\_gt\*.itiff&quot; &quot;C:\Projects\VP2\MLdata\_gt\*.ovr&quot;&quot;"
+#! DEFAULT_VALUE="&quot;&quot;C:\Projects\VP2\MLdata\_gt1\*.tif&quot; &quot;C:\Projects\VP2\MLdata\_gt1\*.tiff&quot; &quot;C:\Projects\VP2\MLdata\_gt1\*.itiff&quot; &quot;C:\Projects\VP2\MLdata\_gt1\*.ovr&quot;&quot;"
 #! IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
@@ -1501,7 +1501,7 @@
 #! />
 #! <GLOBAL_PARAMETER
 #! GUI_LINE="GUI MULTIFILE SourceDataset_PNGRASTER_2 PNGRASTER_Files(*.png)|*.png|All_Files(*)|* Source PNG (Portable Network Graphics) File(s):"
-#! DEFAULT_VALUE="C:\Projects\VP2\MLdata\_gt_color\*.png"
+#! DEFAULT_VALUE="C:\Projects\VP2\MLdata\_gt1_color\*.png"
 #! IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -1571,7 +1571,7 @@
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Clip with shift&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="2021.38 192.807"
 #! TOP_LEFT="2021.38 192.807"
-#! BOTTOM_RIGHT="2296.57 99.8067"
+#! BOTTOM_RIGHT="2296.56 99.8064"
 #! BOUNDING_RECT="2021.38 192.807 275.183 93.0006"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
@@ -1586,7 +1586,7 @@
 #! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.875pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Clip with shift&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 #! POSITION="2156.58 -877.251"
 #! TOP_LEFT="2156.58 -877.251"
-#! BOTTOM_RIGHT="2431.77 -970.252"
+#! BOTTOM_RIGHT="2431.76 -970.252"
 #! BOUNDING_RECT="2156.58 -877.251 275.183 93.0006"
 #! ORDER="5e+014"
 #! FOLLOW_ANCHOR="true"
@@ -1649,23 +1649,23 @@
 #! <XFORM_ATTR ATTR_NAME="_raster_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
-#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
 #! <XFORM_PARM PARM_NAME="TILE_ROW_ATTRIBUTE" PARM_VALUE="_tile_row"/>
-#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
-#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_OR_NUMTILES" PARM_VALUE="Tile Size"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="SEED_ROW" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
+#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
+#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="RASTER_INDEX_ATTRIBUTE" PARM_VALUE="_raster_index"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="10"
@@ -1750,18 +1750,18 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_num_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterClipper"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="START_COLUMN" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_LEFT_PADDDING_COLUMNS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_BOTTOM_PADDING_ROWS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_RIGHT_PADDDING_COLUMNS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_ROWS" PARM_VALUE="@Value(_clip_rows)"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="0"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="12"
@@ -1805,13 +1805,13 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_num_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ClipSize"/>
-#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ClipSize"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_tile_num_rows,512,_tile_num_columns,512,_clip_rows,&lt;at&gt;Evaluate&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_num_rows&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;_num_rows&lt;closeparen&gt;%512&lt;closeparen&gt;,_clip_columns,&lt;at&gt;Evaluate&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_num_columns&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;_num_columns&lt;closeparen&gt;%512&lt;closeparen&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="13"
@@ -1861,12 +1861,12 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName"/>
-#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
-#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_column&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_row&lt;closeparen&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -1915,23 +1915,23 @@
 #! <XFORM_ATTR ATTR_NAME="_raster_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler_2"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
-#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
 #! <XFORM_PARM PARM_NAME="TILE_ROW_ATTRIBUTE" PARM_VALUE="_tile_row"/>
-#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
-#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_OR_NUMTILES" PARM_VALUE="Tile Size"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="SEED_ROW" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
+#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
+#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="RASTER_INDEX_ATTRIBUTE" PARM_VALUE="_raster_index"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="15"
@@ -2014,18 +2014,18 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_num_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterClipper_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="START_COLUMN" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_LEFT_PADDDING_COLUMNS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_BOTTOM_PADDING_ROWS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_RIGHT_PADDDING_COLUMNS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_ROWS" PARM_VALUE="@Value(_clip_rows)"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="0"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="17"
@@ -2068,13 +2068,13 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_num_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ClipSize_2"/>
-#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
-#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ClipSize_2"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_tile_num_rows,512,_tile_num_columns,512,_clip_rows,&lt;at&gt;Evaluate&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_num_rows&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;_num_rows&lt;closeparen&gt;%512&lt;closeparen&gt;,_clip_columns,&lt;at&gt;Evaluate&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_num_columns&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;_num_columns&lt;closeparen&gt;%512&lt;closeparen&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="18"
@@ -2123,12 +2123,12 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName_2"/>
-#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
-#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName_2"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_column&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_row&lt;closeparen&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -2177,23 +2177,23 @@
 #! <XFORM_ATTR ATTR_NAME="_raster_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler_3"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
-#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
 #! <XFORM_PARM PARM_NAME="TILE_ROW_ATTRIBUTE" PARM_VALUE="_tile_row"/>
-#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
-#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_OR_NUMTILES" PARM_VALUE="Tile Size"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="SEED_ROW" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler_3"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
+#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
+#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="RASTER_INDEX_ATTRIBUTE" PARM_VALUE="_raster_index"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="26"
@@ -2236,18 +2236,18 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_num_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="@Value(_tile_num_rows)/2"/>
+#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterClipper_3"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="START_COLUMN" PARM_VALUE="@Value(_tile_num_columns)/2"/>
-#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_LEFT_PADDDING_COLUMNS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_BOTTOM_PADDING_ROWS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_RIGHT_PADDDING_COLUMNS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_ROWS" PARM_VALUE="@Value(_clip_rows)"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="@Value(_tile_num_rows)/2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="27"
@@ -2296,12 +2296,12 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName_3"/>
-#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
-#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName_3"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_column&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_row&lt;closeparen&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -2351,23 +2351,23 @@
 #! <XFORM_ATTR ATTR_NAME="_raster_index" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler_4"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
-#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
 #! <XFORM_PARM PARM_NAME="TILE_ROW_ATTRIBUTE" PARM_VALUE="_tile_row"/>
-#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
-#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_OR_NUMTILES" PARM_VALUE="Tile Size"/>
-#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
-#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
-#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="SEED_ROW" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="TILESIZE_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_ROWS" PARM_VALUE="@Value(_tile_num_rows)"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TILE_COLUMN_ATTRIBUTE" PARM_VALUE="_tile_column"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterTiler_4"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_TILE_COLUMNS" PARM_VALUE="@Value(_tile_num_columns)"/>
+#! <XFORM_PARM PARM_NAME="FORCE_EQUAL_SIZED_TILES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_VERTICAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_rows"/>
+#! <XFORM_PARM PARM_NAME="SEED_COLUMN" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="RASTER_INDEX_ATTRIBUTE" PARM_VALUE="_raster_index"/>
+#! <XFORM_PARM PARM_NAME="NUM_HORIZONTAL_TILES_ATTRIBUTE" PARM_VALUE="_num_tile_columns"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="30"
@@ -2411,18 +2411,18 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_num_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_rows" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_clip_columns" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="@Value(_tile_num_rows)/2"/>
+#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterClipper_4"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="START_COLUMN" PARM_VALUE="@Value(_tile_num_columns)/2 "/>
-#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_LEFT_PADDDING_COLUMNS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_BOTTOM_PADDING_ROWS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="NUM_TOP_PADDING_ROWS" PARM_VALUE="0"/>
 #! <XFORM_PARM PARM_NAME="NUM_RIGHT_PADDDING_COLUMNS" PARM_VALUE="0"/>
-#! <XFORM_PARM PARM_NAME="PADDING_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NUM_COLUMNS" PARM_VALUE="@Value(_clip_columns)"/>
 #! <XFORM_PARM PARM_NAME="NUM_ROWS" PARM_VALUE="@Value(_clip_rows)"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="SUBSET_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="START_ROW" PARM_VALUE="@Value(_tile_num_rows)/2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="31"
@@ -2472,12 +2472,12 @@
 #! <XFORM_ATTR ATTR_NAME="_tile_column" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_row" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_tile_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName_4"/>
-#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="ACTION" PARM_VALUE="Create New Attribute"/>
-#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARAM_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TileName_4"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTRLIST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_tile_name"/>
 #! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_column&lt;closeparen&gt;_&lt;at&gt;Value&lt;openparen&gt;_tile_row&lt;closeparen&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -2597,12 +2597,12 @@
 #! <XFORM_ATTR ATTR_NAME="_lower_right_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_lower_left_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_lower_left_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterSelector_2"/>
-#! <XFORM_PARM PARM_NAME="ATTRIBUTE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="BAND_LIST" PARM_VALUE="2"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="SELECTION_MODE" PARM_VALUE="Band and Palette List"/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterSelector_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="BAND_LIST" PARM_VALUE="2"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="35"
@@ -2642,17 +2642,17 @@
 #! <XFORM_ATTR ATTR_NAME="_lower_left_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_lower_left_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterInterpretationCoercer_2"/>
-#! <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="RGB24"/>
-#! <XFORM_PARM PARM_NAME="RGBA_TO_RGB" PARM_VALUE="Drop the alpha band"/>
-#! <XFORM_PARM PARM_NAME="NUMERIC_TO_NUMERIC" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RGB_TO_RGBA" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="CONVERSION_OPTIONS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="COLOR_TO_COLOR" PARM_VALUE="Scale by data type"/>
-#! <XFORM_PARM PARM_NAME="FLOAT_TO_INTEGER" PARM_VALUE="Round"/>
-#! <XFORM_PARM PARM_NAME="NUMERIC_TO_COLOR" PARM_VALUE="Scale by data values"/>
-#! <XFORM_PARM PARM_NAME="COLOR_TO_NUMERIC" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="INTERPRETATION_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="RGB24"/>
+#! <XFORM_PARM PARM_NAME="CONVERSION_OPTIONS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COLOR_TO_COLOR" PARM_VALUE="Scale by data type"/>
+#! <XFORM_PARM PARM_NAME="RGBA_TO_RGB" PARM_VALUE="Drop the alpha band"/>
+#! <XFORM_PARM PARM_NAME="FLOAT_TO_INTEGER" PARM_VALUE="Round"/>
+#! <XFORM_PARM PARM_NAME="RGB_TO_RGBA" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUMERIC_TO_COLOR" PARM_VALUE="Scale by data values"/>
+#! <XFORM_PARM PARM_NAME="COLOR_TO_NUMERIC" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUMERIC_TO_NUMERIC" PARM_VALUE="&lt;Unused&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="76"
@@ -2732,10 +2732,10 @@
 #! <XFORM_ATTR ATTR_NAME="_lower_left_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_lower_left_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_palette" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterPaletteAdder_2"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PALETTE_ATTR" PARM_VALUE="_palette"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterPaletteAdder_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="81"
@@ -2744,7 +2744,7 @@
 #! POSITION="2111.26 -1510.41"
 #! BOUNDING_RECT="2111.26 -1510.41 -1 -1"
 #! ORDER="5e+014"
-#! PARMS_EDITED="false"
+#! PARMS_EDITED="true"
 #! ENABLED="true"
 #! LAST_PARM_EDIT="15250"
 #! >
@@ -2775,12 +2775,12 @@
 #! <XFORM_ATTR ATTR_NAME="_lower_left_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_lower_left_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_palette" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFileReader_2"/>
-#! <XFORM_PARM PARM_NAME="DEST_ATTR" PARM_VALUE="_palette"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="FILE_NAME" PARM_VALUE="C:&lt;backslash&gt;Projects&lt;backslash&gt;VP2&lt;backslash&gt;MLdata&lt;backslash&gt;palette1.txt"/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFileReader_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEST_ATTR" PARM_VALUE="_palette"/>
 #! <XFORM_PARM PARM_NAME="CHAR_ENCODING" PARM_VALUE="utf-8"/>
-#! <XFORM_PARM PARM_NAME="FILE_NAME" PARM_VALUE="C:&lt;backslash&gt;Projects&lt;backslash&gt;VP2&lt;backslash&gt;MLdata&lt;backslash&gt;palette.txt"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="92"
@@ -2820,17 +2820,17 @@
 #! <XFORM_ATTR ATTR_NAME="_lower_left_x" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_ATTR ATTR_NAME="_lower_left_y" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterInterpretationCoercer"/>
-#! <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="UInt8"/>
-#! <XFORM_PARM PARM_NAME="RGBA_TO_RGB" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="NUMERIC_TO_NUMERIC" PARM_VALUE="Bounded cast"/>
-#! <XFORM_PARM PARM_NAME="RGB_TO_RGBA" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="CONVERSION_OPTIONS_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="COLOR_TO_COLOR" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="FLOAT_TO_INTEGER" PARM_VALUE="Round"/>
-#! <XFORM_PARM PARM_NAME="NUMERIC_TO_COLOR" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="COLOR_TO_NUMERIC" PARM_VALUE="Bounded cast"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="INTERPRETATION_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="UInt8"/>
+#! <XFORM_PARM PARM_NAME="CONVERSION_OPTIONS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COLOR_TO_COLOR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RGBA_TO_RGB" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="FLOAT_TO_INTEGER" PARM_VALUE="Round"/>
+#! <XFORM_PARM PARM_NAME="RGB_TO_RGBA" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUMERIC_TO_COLOR" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="COLOR_TO_NUMERIC" PARM_VALUE="Bounded cast"/>
+#! <XFORM_PARM PARM_NAME="NUMERIC_TO_NUMERIC" PARM_VALUE="Bounded cast"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -3128,11 +3128,11 @@ DEFAULT_MACRO SourceDataset_TIFF_7 ""C:\Projects\VP2\MLdata\_orthos\*.tif" "C:\P
 GUI MULTIFILE SourceDataset_TIFF_7 TIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|All_Files(*)|* Source TIFF (Tagged Image File Format) File(s):
 DEFAULT_MACRO DestDataset_PNGRASTER_8 C:\Projects\VP2\MLdata\_orthos_3bands
 GUI DIRNAME DestDataset_PNGRASTER_8 Destination PNG (Portable Network Graphics) Folder:
-DEFAULT_MACRO SourceDataset_TIFF_6 ""C:\Projects\VP2\MLdata\_gt\*.tif" "C:\Projects\VP2\MLdata\_gt\*.tiff" "C:\Projects\VP2\MLdata\_gt\*.itiff" "C:\Projects\VP2\MLdata\_gt\*.ovr""
+DEFAULT_MACRO SourceDataset_TIFF_6 ""C:\Projects\VP2\MLdata\_gt1\*.tif" "C:\Projects\VP2\MLdata\_gt1\*.tiff" "C:\Projects\VP2\MLdata\_gt1\*.itiff" "C:\Projects\VP2\MLdata\_gt1\*.ovr""
 GUI MULTIFILE SourceDataset_TIFF_6 TIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|All_Files(*)|* Source TIFF (Tagged Image File Format) File(s):
 DEFAULT_MACRO SourceDataset_PNGRASTER C:\Projects\VP2\MLdata\_orthos_3bands\*.png
 GUI MULTIFILE SourceDataset_PNGRASTER PNGRASTER_Files(*.png)|*.png|All_Files(*)|* Source PNG (Portable Network Graphics) File(s):
-DEFAULT_MACRO SourceDataset_PNGRASTER_2 C:\Projects\VP2\MLdata\_gt_color\*.png
+DEFAULT_MACRO SourceDataset_PNGRASTER_2 C:\Projects\VP2\MLdata\_gt1_color\*.png
 GUI MULTIFILE SourceDataset_PNGRASTER_2 PNGRASTER_Files(*.png)|*.png|All_Files(*)|* Source PNG (Portable Network Graphics) File(s):
 INCLUDE [ if {{$(DestDataset_PNGRASTER_9)} == {}} { puts_real {Parameter 'DestDataset_PNGRASTER_9' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_PNGRASTER_7)} == {}} { puts_real {Parameter 'DestDataset_PNGRASTER_7' must be given a value.}; exit 1; }; ]
@@ -3413,7 +3413,7 @@ DEFAULT_MACRO PNGRASTER_IN_CLIP_TO_ENVELOPE_PNGRASTER_2 NO
 PNGRASTER_2_CLIP_TO_ENVELOPE "$(PNGRASTER_IN_CLIP_TO_ENVELOPE_PNGRASTER_2)"
 GUI OPTIONAL CHECKBOX PNGRASTER_IN_CLIP_TO_ENVELOPE_PNGRASTER_2 YES%NO Clip to Search Envelope
 # ===========================================================================
-DEFAULT_MACRO PNGRASTER_IN_NETWORK_AUTHENTICATION_PNGRASTER_2 
+DEFAULT_MACRO PNGRASTER_IN_NETWORK_AUTHENTICATION_PNGRASTER_2 AUTH_INFO_GROUP,NO,AUTH_METHOD,<lt>Unused<gt>,NAMED_CONNECTION,<lt>Unused<gt>,AUTH_USERNAME,<lt>Unused<gt>,AUTH_PASSWORD,<Unused>
 PNGRASTER_2_NETWORK_AUTHENTICATION "$(PNGRASTER_IN_NETWORK_AUTHENTICATION_PNGRASTER_2)"
 GUI OPTIONAL AUTHENTICATOR PNGRASTER_IN_NETWORK_AUTHENTICATION_PNGRASTER_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
 # PR:31021
@@ -3625,25 +3625,6 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "ClipSize_2 OUTPUT Splitter"   INPUT FEA
 FACTORY_DEF * TeeFactory   FACTORY_NAME "ClipSize_2_OUTPUT_1_H/sIjrm3WEc= Disabled Nuker -1 55"   INPUT FEATURE_TYPE ClipSize_2_OUTPUT_1_H/sIjrm3WEc=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper_3    INPUT  FEATURE_TYPE ClipSize_2_OUTPUT_1_H/sIjrm3WEc=    OUTPUT FEATURE_TYPE RasterClipper_3_OUTPUT       @SubsetRaster("@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen><solidus>2,RasterClipper_3)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper_3)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen><solidus>2,RasterClipper_3)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper_3)", "0", "0", "0", "0")
-
-# -------------------------------------------------------------------------
-
-INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_3)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_3)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_ROWS_CLAUSE NUM_TILE_ROWS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_3)"} } else {    puts {MACRO NUM_TILE_ROWS_CLAUSE} } ]
-INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_3)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_3)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE NUM_TILE_COLUMNS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_3)"} } else {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE} } ]
-INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE NUM_HORIZONTAL_TILES "<Unused>"} } else {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE} } ]
-INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE NUM_VERTICAL_TILES "<Unused>"} } else {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE} } ]
-FACTORY_DEF * RasterSubsetFactory    FACTORY_NAME RasterTiler_3    INPUT  FEATURE_TYPE RasterClipper_3_OUTPUT    $(NUM_TILE_ROWS_CLAUSE)    $(NUM_TILE_COLUMNS_CLAUSE)    $(NUM_HORIZONTAL_TILES_CLAUSE)    $(NUM_VERTICAL_TILES_CLAUSE)    SEED_ROW "0"    SEED_COLUMN "0"    FORCE_EQUAL_SIZED_TILES No    RASTER_INDEX_ATTRIBUTE "_raster_index"    TILE_ROW_ATTRIBUTE "_tile_row"    TILE_COLUMN_ATTRIBUTE "_tile_column"    NUM_HORIZONTAL_TILES_ATTRIBUTE "_num_tile_columns"    NUM_VERTICAL_TILES_ATTRIBUTE "_num_tile_rows"    OUTPUT TILES FEATURE_TYPE RasterTiler_3_TILES
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc TileName_3_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {_tile_name}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"<at>Value<openparen>fme_basename<closeparen>_<at>Value<openparen>_tile_column<closeparen>_<at>Value<openparen>_tile_row<closeparen>"};    };    lappend parmList {TileName_3};    eval FME_Execute $parmList; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME TileName_3    INPUT  FEATURE_TYPE RasterTiler_3_TILES    OUTPUT FEATURE_TYPE TileName_3_OUTPUT         @Tcl2("TileName_3_evaluator ")
-
-
-# -------------------------------------------------------------------------
-
 FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper_2    INPUT  FEATURE_TYPE ClipSize_2_OUTPUT_0_H/sIjrm3WEc=    OUTPUT FEATURE_TYPE RasterClipper_2_OUTPUT       @SubsetRaster("0", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper_2)", "0", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper_2)", "0", "0", "0", "0")
 
 # -------------------------------------------------------------------------
@@ -3663,34 +3644,34 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME TileName_2    INPUT  FEATURE_TYPE Raste
 
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper_3    INPUT  FEATURE_TYPE ClipSize_2_OUTPUT_1_H/sIjrm3WEc=    OUTPUT FEATURE_TYPE RasterClipper_3_OUTPUT       @SubsetRaster("@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen><solidus>2,RasterClipper_3)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper_3)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen><solidus>2,RasterClipper_3)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper_3)", "0", "0", "0", "0")
+
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_3)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_3)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_ROWS_CLAUSE NUM_TILE_ROWS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_3)"} } else {    puts {MACRO NUM_TILE_ROWS_CLAUSE} } ]
+INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_3)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_3)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE NUM_TILE_COLUMNS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_3)"} } else {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE} } ]
+INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE NUM_HORIZONTAL_TILES "<Unused>"} } else {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE} } ]
+INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE NUM_VERTICAL_TILES "<Unused>"} } else {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE} } ]
+FACTORY_DEF * RasterSubsetFactory    FACTORY_NAME RasterTiler_3    INPUT  FEATURE_TYPE RasterClipper_3_OUTPUT    $(NUM_TILE_ROWS_CLAUSE)    $(NUM_TILE_COLUMNS_CLAUSE)    $(NUM_HORIZONTAL_TILES_CLAUSE)    $(NUM_VERTICAL_TILES_CLAUSE)    SEED_ROW "0"    SEED_COLUMN "0"    FORCE_EQUAL_SIZED_TILES No    RASTER_INDEX_ATTRIBUTE "_raster_index"    TILE_ROW_ATTRIBUTE "_tile_row"    TILE_COLUMN_ATTRIBUTE "_tile_column"    NUM_HORIZONTAL_TILES_ATTRIBUTE "_num_tile_columns"    NUM_VERTICAL_TILES_ATTRIBUTE "_num_tile_rows"    OUTPUT TILES FEATURE_TYPE RasterTiler_3_TILES
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc TileName_3_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {_tile_name}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"<at>Value<openparen>fme_basename<closeparen>_<at>Value<openparen>_tile_column<closeparen>_<at>Value<openparen>_tile_row<closeparen>"};    };    lappend parmList {TileName_3};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME TileName_3    INPUT  FEATURE_TYPE RasterTiler_3_TILES    OUTPUT FEATURE_TYPE TileName_3_OUTPUT         @Tcl2("TileName_3_evaluator ")
+
+
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME RasterProperties    INPUT  FEATURE_TYPE PNGRASTER_PNGRASTER_1    OUTPUT FEATURE_TYPE RasterProperties_OUTPUT      @RasterProperties(RASTER_ROTATION2D)
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME ClipSize ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV INPUT  FEATURE_TYPE RasterProperties_OUTPUT ATTR _tile_num_rows 512 ATTR _tile_num_columns 512 ATTR _clip_rows <at>Evaluate<openparen><at>Value<openparen>_num_rows<closeparen>-<at>Value<openparen>_num_rows<closeparen>%512<closeparen> ATTR _clip_columns <at>Evaluate<openparen><at>Value<openparen>_num_columns<closeparen>-<at>Value<openparen>_num_columns<closeparen>%512<closeparen>    OUTPUT OUTPUT FEATURE_TYPE ClipSize_OUTPUT 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "ClipSize OUTPUT Splitter"   INPUT FEATURE_TYPE ClipSize_OUTPUT   OUTPUT FEATURE_TYPE ClipSize_OUTPUT_0_HjvPgFq7bTs=   OUTPUT FEATURE_TYPE ClipSize_OUTPUT_1_HjvPgFq7bTs=
-FACTORY_DEF * TeeFactory   FACTORY_NAME "ClipSize_OUTPUT_1_HjvPgFq7bTs= Disabled Nuker -1 62"   INPUT FEATURE_TYPE ClipSize_OUTPUT_1_HjvPgFq7bTs=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ClipSize_OUTPUT_0_HjvPgFq7bTs= Disabled Nuker -1 62"   INPUT FEATURE_TYPE ClipSize_OUTPUT_0_HjvPgFq7bTs=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper_4    INPUT  FEATURE_TYPE ClipSize_OUTPUT_1_HjvPgFq7bTs=    OUTPUT FEATURE_TYPE RasterClipper_4_OUTPUT       @SubsetRaster("@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen><solidus>2,RasterClipper_4)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper_4)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen><solidus>2<space>,RasterClipper_4)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper_4)", "0", "0", "0", "0")
-
-# -------------------------------------------------------------------------
-
-INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_4)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_4)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_ROWS_CLAUSE NUM_TILE_ROWS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_4)"} } else {    puts {MACRO NUM_TILE_ROWS_CLAUSE} } ]
-INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_4)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_4)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE NUM_TILE_COLUMNS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_4)"} } else {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE} } ]
-INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE NUM_HORIZONTAL_TILES "<Unused>"} } else {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE} } ]
-INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE NUM_VERTICAL_TILES "<Unused>"} } else {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE} } ]
-FACTORY_DEF * RasterSubsetFactory    FACTORY_NAME RasterTiler_4    INPUT  FEATURE_TYPE RasterClipper_4_OUTPUT    $(NUM_TILE_ROWS_CLAUSE)    $(NUM_TILE_COLUMNS_CLAUSE)    $(NUM_HORIZONTAL_TILES_CLAUSE)    $(NUM_VERTICAL_TILES_CLAUSE)    SEED_ROW "0"    SEED_COLUMN "0"    FORCE_EQUAL_SIZED_TILES No    RASTER_INDEX_ATTRIBUTE "_raster_index"    TILE_ROW_ATTRIBUTE "_tile_row"    TILE_COLUMN_ATTRIBUTE "_tile_column"    NUM_HORIZONTAL_TILES_ATTRIBUTE "_num_tile_columns"    NUM_VERTICAL_TILES_ATTRIBUTE "_num_tile_rows"    OUTPUT TILES FEATURE_TYPE RasterTiler_4_TILES
-
-# -------------------------------------------------------------------------
-
-
-Tcl2 proc TileName_4_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {_tile_name}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"<at>Value<openparen>fme_basename<closeparen>_<at>Value<openparen>_tile_column<closeparen>_<at>Value<openparen>_tile_row<closeparen>"};    };    lappend parmList {TileName_4};    eval FME_Execute $parmList; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME TileName_4    INPUT  FEATURE_TYPE RasterTiler_4_TILES    OUTPUT FEATURE_TYPE TileName_4_OUTPUT         @Tcl2("TileName_4_evaluator ")
-
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper    INPUT  FEATURE_TYPE ClipSize_OUTPUT_0_HjvPgFq7bTs=    OUTPUT FEATURE_TYPE RasterClipper_OUTPUT       @SubsetRaster("0", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper)", "0", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper)", "0", "0", "0", "0")
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper    INPUT  FEATURE_TYPE ClipSize_OUTPUT_1_HjvPgFq7bTs=    OUTPUT FEATURE_TYPE RasterClipper_OUTPUT       @SubsetRaster("0", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper)", "0", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper)", "0", "0", "0", "0")
 
 # -------------------------------------------------------------------------
 
@@ -3709,6 +3690,25 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME TileName    INPUT  FEATURE_TYPE RasterT
 
 # -------------------------------------------------------------------------
 
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterClipper_4    INPUT  FEATURE_TYPE ClipSize_OUTPUT_0_HjvPgFq7bTs=    OUTPUT FEATURE_TYPE RasterClipper_4_OUTPUT       @SubsetRaster("@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen><solidus>2,RasterClipper_4)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_rows<closeparen>,RasterClipper_4)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen><solidus>2<space>,RasterClipper_4)", "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_clip_columns<closeparen>,RasterClipper_4)", "0", "0", "0", "0")
+
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_4)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_4)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_ROWS_CLAUSE NUM_TILE_ROWS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_rows<closeparen>,RasterTiler_4)"} } else {    puts {MACRO NUM_TILE_ROWS_CLAUSE} } ]
+INCLUDE [ if {[string length {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_4)}]>0 && [string equal {@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_4)} {<Unused>}]==0} {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE NUM_TILE_COLUMNS "@EvaluateExpression(FDIV,FLOAT,<at>Value<openparen>_tile_num_columns<closeparen>,RasterTiler_4)"} } else {    puts {MACRO NUM_TILE_COLUMNS_CLAUSE} } ]
+INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE NUM_HORIZONTAL_TILES "<Unused>"} } else {    puts {MACRO NUM_HORIZONTAL_TILES_CLAUSE} } ]
+INCLUDE [ if {[string length {<Unused>}]>0 && [string equal {<Unused>} {<Unused>}]==0} {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE NUM_VERTICAL_TILES "<Unused>"} } else {    puts {MACRO NUM_VERTICAL_TILES_CLAUSE} } ]
+FACTORY_DEF * RasterSubsetFactory    FACTORY_NAME RasterTiler_4    INPUT  FEATURE_TYPE RasterClipper_4_OUTPUT    $(NUM_TILE_ROWS_CLAUSE)    $(NUM_TILE_COLUMNS_CLAUSE)    $(NUM_HORIZONTAL_TILES_CLAUSE)    $(NUM_VERTICAL_TILES_CLAUSE)    SEED_ROW "0"    SEED_COLUMN "0"    FORCE_EQUAL_SIZED_TILES No    RASTER_INDEX_ATTRIBUTE "_raster_index"    TILE_ROW_ATTRIBUTE "_tile_row"    TILE_COLUMN_ATTRIBUTE "_tile_column"    NUM_HORIZONTAL_TILES_ATTRIBUTE "_num_tile_columns"    NUM_VERTICAL_TILES_ATTRIBUTE "_num_tile_rows"    OUTPUT TILES FEATURE_TYPE RasterTiler_4_TILES
+
+# -------------------------------------------------------------------------
+
+
+Tcl2 proc TileName_4_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {_tile_name}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"<at>Value<openparen>fme_basename<closeparen>_<at>Value<openparen>_tile_column<closeparen>_<at>Value<openparen>_tile_row<closeparen>"};    };    lappend parmList {TileName_4};    eval FME_Execute $parmList; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME TileName_4    INPUT  FEATURE_TYPE RasterTiler_4_TILES    OUTPUT FEATURE_TYPE TileName_4_OUTPUT         @Tcl2("TileName_4_evaluator ")
+
+
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * TeeFactory    FACTORY_NAME RasterProperties_4    INPUT  FEATURE_TYPE TIFF_TIFF_2    OUTPUT FEATURE_TYPE RasterProperties_4_OUTPUT      @RasterProperties(RASTER_ROTATION2D)
 
 # -------------------------------------------------------------------------
@@ -3718,7 +3718,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer    INPUT  F
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFileReader_2    INPUT  FEATURE_TYPE RasterInterpretationCoercer_OUTPUT    OUTPUT FEATURE_TYPE AttributeFileReader_2_OUTPUT         @File(ENCODED_PARAMS,DestReadSrcWrite,_palette,"C:<backslash>Projects<backslash>VP2<backslash>MLdata<backslash>palette.txt",utf-8)
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFileReader_2    INPUT  FEATURE_TYPE RasterInterpretationCoercer_OUTPUT    OUTPUT FEATURE_TYPE AttributeFileReader_2_OUTPUT         @File(ENCODED_PARAMS,DestReadSrcWrite,_palette,"C:<backslash>Projects<backslash>VP2<backslash>MLdata<backslash>palette1.txt",utf-8)
 
 # -------------------------------------------------------------------------
 
@@ -3744,7 +3744,7 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer_2    INPUT 
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC RasterInterpretationCoercer_2_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>fme_basename<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterPaletteAdder_2_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>fme_basename<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_2_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_3_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_4_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC RasterPaletteAdder_2_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster100<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>fme_basename<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_2_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Raster1<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_3_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,2,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC TileName_4_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,3,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>_tile_name<closeparen> GEOMETRY    ROUTE FME_GENERIC RasterInterpretationCoercer_2_OUTPUT TO PNGRASTER __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,4,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>TIFF<closeparen>,<at>CopyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>fme_basename<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
