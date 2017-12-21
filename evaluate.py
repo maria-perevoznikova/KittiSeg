@@ -111,8 +111,9 @@ def main(_):
     # logging.info("Output images will be saved to {}".format)
     ana.do_analyze(logdir)
 
+    # TODO reimplement if needed
     logging.info("Creating output on test data.")
-    ana.do_inference(logdir)
+    # ana.do_inference(logdir)
 
     logging.info("Analysis for pretrained model complete.")
     logging.info("For evaluating your own models I recommend using:"
