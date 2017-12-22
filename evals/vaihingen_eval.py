@@ -59,13 +59,13 @@ def evaluate(hypes, sess, image_pl, inf_out):
     # create colormap
     classes = hypes['classes']
     color_dict = {"default": [0, 0, 0, 0]}
-    for k, v in enumerate(classes.values()):
+    for i, k in enumerate(sorted(classes.keys())):
         # add alpha channel
-        color = list(v)
+        color = list(classes[k])
         color.append(127)
-        color_dict[k] = color
-    # TOOD remove logging
-    print("Color dict: {}".format(color_dict))
+        color_dict[i] = color
+    print("Eval classes: {}".format(classes))
+    print("Eval color dict: {}".format(color_dict))
 
     for phase in ['train', 'val']:
         data_file = hypes['data']['{}_file'.format(phase)]
