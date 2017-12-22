@@ -10,26 +10,29 @@
   "path": ["../submodules"],
 
   "data": {
-    "train_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/train/train.txt",
-    "val_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/val/val.txt",
-    "test_file" : "/home/maria/Documents/ISPRS_semantic_labeling_Vaihingen/test/test.txt",
+    "train_file" : "/home/maria/Documents/ex2/train/train.txt",
+    "val_file" : "/home/maria/Documents/ex2/val/val.txt",
+    "test_file" : "//home/maria/Documents/ex2/test/test.txt",
     "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy"
   },
 
   "classes": {
-    "background" : [255,0,0],
-    "building" : [0,0,255],
-    "car" : [255,255,0],
-    "impervious_surface" : [255,255,255],
-    "low_vegetation": [0,255,255],
-    "tree" : [0,255,0]
+    "01" : [255,0,0],
+    "02" : [0,255,0],
+    "03" : [0,0,255],
+    "04" : [255,255,0],
+    "05" : [255,0,255],
+    "06" : [0,255,255],
+    "07" : [100,0,0],
+    "08" : [0,100,0],
+    "09" : [0,0,100]
   },
 
   "arch": {
     "fcn_in": "fc7",
-    "num_classes" : 6,
+    "num_classes" : 9,
     "image_size" : 50,
-    "weight": [1, 1, 1, 1, 1, 1],
+    "weight": [1, 1, 1, 1, 1, 1, 1, 1, 1],
     "num_channels" : 3,
     "whitening": false
   },
@@ -50,6 +53,7 @@
     "reseize_image": false,
     "image_height" : 384,
     "image_width" : 1248,
+
     "augment_level": 0
   },
 
@@ -58,7 +62,7 @@
     "eval_iter": 250,
     "write_iter": 250,
     "save_iter": 2000,
-    "image_iter": 20000
+    "image_iter": 25000
   },
 
   "solver": {
@@ -69,7 +73,7 @@
       "threads": 4,
       "learning_rate": 1e-5,
       "learning_rate_step": null,
-      "max_steps": 20000
+      "max_steps": 25000
   },
   "use_fc_wd": true,
   "loss": "xentropy",
