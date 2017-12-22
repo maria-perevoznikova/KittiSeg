@@ -43,7 +43,9 @@ def eval_image(hypes, gt_image, output_image):
         fn[i] = np.sum(negativ * labels[:, i])
         tn[i] = np.sum(negativ * other_labels)
 
-        assert (labels.shape[0] == tp[i] + fp[i] + fn[i] + tn[i])
+        # assertion holds only if each pixel belongs to one of the defined classes
+        # i.e. no 'unknown' class is present
+        # assert (labels.shape[0] == tp[i] + fp[i] + fn[i] + tn[i])
 
     return tp, fp, tn, fn
 
@@ -62,6 +64,8 @@ def evaluate(hypes, sess, image_pl, inf_out):
         color = list(v)
         color.append(127)
         color_dict[k] = color
+    # TOOD remove logging
+    print("Color dict: {}".format(color_dict))
 
     for phase in ['train', 'val']:
         data_file = hypes['data']['{}_file'.format(phase)]
