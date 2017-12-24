@@ -19,7 +19,8 @@ def eval_image(hypes, gt_image, output_image):
     num_classes = len(classes)
     gt_labels = np.zeros((gt_image.shape[0], gt_image.shape[1], num_classes))
     # reshape gt_image: [H W n_chan] -> [H W n_cl]
-    for i, color in enumerate(classes.values()):
+    for i, k in enumerate(sorted(classes.keys())):
+        color = classes[k]
         gt_labels[:,:,i] = np.all(gt_image == color, axis=2)
 
     # reshape gt_labels: [WxH n_cl]
@@ -58,7 +59,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
 
     # create colormap
     classes = hypes['classes']
-    color_dict = {"default": [0, 0, 0, 0]}
+    color_dict = {}
     for i, k in enumerate(sorted(classes.keys())):
         # add alpha channel
         color = list(classes[k])
