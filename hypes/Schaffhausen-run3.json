@@ -12,7 +12,7 @@
   "data": {
     "train_file" : "/home/maria/Documents/ex2/train/train.txt",
     "val_file" : "/home/maria/Documents/ex2/val/val.txt",
-    "test_file" : "//home/maria/Documents/ex2/test/test.txt",
+    "test_file" : "/home/maria/Documents/ex2/test/test.txt",
     "vgg_url": "ftp://mi.eng.cam.ac.uk/pub/mttt2/models/vgg16.npy"
   },
 
