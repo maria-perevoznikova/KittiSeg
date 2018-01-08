@@ -423,12 +423,13 @@ def overlay_segmentation(input_image, segmentation, color_dict):
     width, height = segmentation.shape
     output = scipy.misc.toimage(segmentation)
     output = output.convert('RGBA')
+    default = [0, 0, 0, 0]
     for x in range(0, width):
         for y in range(0, height):
             if segmentation[x, y] in color_dict:
                 output.putpixel((y, x), tuple(color_dict[segmentation[x, y]]))
-            elif 'default' in color_dict:
-                output.putpixel((y, x), tuple(color_dict['default']))
+            else:
+                output.putpixel((y, x), tuple(default))
 
     background = scipy.misc.toimage(input_image)
     background.paste(output, box=None, mask=output)
@@ -462,12 +463,13 @@ def segmentation_rgb(segmentation, color_dict):
     width, height = segmentation.shape
     output = scipy.misc.toimage(segmentation)
     output = output.convert('RGB')
+    default = [0, 0, 0]
     for x in range(0, width):
         for y in range(0, height):
             if segmentation[x, y] in color_dict:
                 output.putpixel((y, x), tuple(color_dict[segmentation[x, y]])[:3])
-            elif 'default' in color_dict:
-                output.putpixel((y, x), tuple(color_dict['default'])[:3])
+            else:
+                output.putpixel((y, x), tuple(default))
 
     return np.array(output)
 

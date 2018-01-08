@@ -19,7 +19,8 @@ def eval_image(hypes, gt_image, output_image):
     num_classes = len(classes)
     gt_labels = np.zeros((gt_image.shape[0], gt_image.shape[1], num_classes))
     # reshape gt_image: [H W n_chan] -> [H W n_cl]
-    for i, color in enumerate(classes.values()):
+    for i, k in enumerate(sorted(classes.keys())):
+        color = classes[k]
         gt_labels[:,:,i] = np.all(gt_image == color, axis=2)
 
     # reshape gt_labels: [WxH n_cl]
@@ -43,7 +44,9 @@ def eval_image(hypes, gt_image, output_image):
         fn[i] = np.sum(negativ * labels[:, i])
         tn[i] = np.sum(negativ * other_labels)
 
-        assert (labels.shape[0] == tp[i] + fp[i] + fn[i] + tn[i])
+        # assertion holds only if each pixel belongs to one of the defined classes
+        # i.e. no 'unknown' class is present
+        # assert (labels.shape[0] == tp[i] + fp[i] + fn[i] + tn[i])
 
     return tp, fp, tn, fn
 
@@ -56,12 +59,14 @@ def evaluate(hypes, sess, image_pl, inf_out):
 
     # create colormap
     classes = hypes['classes']
-    color_dict = {"default": [0, 0, 0, 0]}
-    for k, v in enumerate(classes.values()):
+    color_dict = {}
+    for i, k in enumerate(sorted(classes.keys())):
         # add alpha channel
-        color = list(v)
+        color = list(classes[k])
         color.append(127)
-        color_dict[k] = color
+        color_dict[i] = color
+    print("Eval classes: {}".format(classes))
+    print("Eval color dict: {}".format(color_dict))
 
     for phase in ['train', 'val']:
         data_file = hypes['data']['{}_file'.format(phase)]

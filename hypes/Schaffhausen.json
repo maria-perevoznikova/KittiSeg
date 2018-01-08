@@ -4,8 +4,8 @@
     "architecture_file" : "../encoder/fcn8_vgg.py",
     "objective_file" : "../decoder/multiclass_loss.py",
     "optimizer_file" : "../optimizer/generic_optimizer.py",
-    "evaluator_file" : "../evals/schaffhausen_eval.py",
-    "tester_file" : "../evals/schaffhausen_test.py"
+    "evaluator_file" : "../evals/vaihingen_eval.py",
+    "tester_file" : "../evals/vaihingen_test.py"
   },
   "path": ["../submodules"],
 
@@ -17,15 +17,15 @@
   },
 
   "classes": {
-    "1" : [255,0,0],
-    "2" : [0,255,0],
-    "3" : [0,0,255],
-    "4" : [255,255,0],
-    "5" : [255,0,255],
-    "6" : [0,255,255],
-    "7" : [100,0,0],
-    "8" : [0,100,0],
-    "9" : [0,0,100]
+    "01" : [255,0,0],
+    "02" : [0,255,0],
+    "03" : [0,0,255],
+    "04" : [255,255,0],
+    "05" : [255,0,255],
+    "06" : [0,255,255],
+    "07" : [100,0,0],
+    "08" : [0,100,0],
+    "09" : [0,0,100]
   },
 
   "arch": {
@@ -58,11 +58,11 @@
   },
 
   "logging": {
-    "display_iter": 20,
-    "eval_iter": 100,
-    "write_iter": 100,
+    "display_iter": 50,
+    "eval_iter": 250,
+    "write_iter": 250,
     "save_iter": 2000,
-    "image_iter": 20000
+    "image_iter": 25000
   },
 
   "solver": {
@@ -73,7 +73,7 @@
       "threads": 4,
       "learning_rate": 1e-5,
       "learning_rate_step": null,
-      "max_steps": 12000
+      "max_steps": 25000
   },
   "use_fc_wd": true,
   "loss": "xentropy",

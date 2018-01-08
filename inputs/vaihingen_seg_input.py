@@ -119,7 +119,8 @@ def _make_data_gen(hypes, phase, data_dir):
     for image, gt_image in data:
 
         gt_classes = []
-        for color in classes.values():
+        for i, k in enumerate(sorted(classes.keys())):
+            color = classes[k]
             gt_classes.append(np.all(gt_image == color, axis=2))
         assert(gt_classes[0].shape == gt_classes[-1].shape)
 
