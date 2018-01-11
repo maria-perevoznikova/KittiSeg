@@ -68,6 +68,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
     print("Eval classes: {}".format(classes))
     print("Eval color dict: {}".format(color_dict))
 
+    eval_list = []
     for phase in ['train', 'val']:
         data_file = hypes['data']['{}_file'.format(phase)]
         data_file = os.path.join(data_dir, data_file)
@@ -110,9 +111,6 @@ def evaluate(hypes, sess, image_pl, inf_out):
                 if phase == 'val':
                     _save_plot(image, output_im, color_dict, image_file, image_list)
 
-
-    eval_list = []
-    for phase in ['train', 'val']:
         for i in range(num_classes):
             tp = total_tp[i]
             fp = total_fp[i]
@@ -124,6 +122,7 @@ def evaluate(hypes, sess, image_pl, inf_out):
             eval_list.append(('[{}] TN {}'.format(phase, i), tn / total))
             eval_list.append(('[{}] FN {}'.format(phase, i), fn / total))
             eval_list.append(('[{}] IoU {}'.format(phase, i), tp / (tp + fp + fn)))
+            eval_list.append(('[{}] F1 {}'.format(phase, i), 2*tp / (2*tp + fp + fn)))
 
         tp_ = np.sum(total_tp)
         fp_ = np.sum(total_fp)
@@ -136,8 +135,9 @@ def evaluate(hypes, sess, image_pl, inf_out):
         eval_list.append(('[{}] TN total '.format(phase), tn_ / total))
         eval_list.append(('[{}] FN total '.format(phase), fn_ / total))
 
-        eval_list.append(('[{}] Acc. '.format(phase), (tn_ + tp_) / total))
-        eval_list.append(('[{}] IoU '.format(phase), tp_ / (tp_ + fp_ + fn_)))
+        eval_list.append(('[{}] Acc. total'.format(phase), (tn_ + tp_) / total))
+        eval_list.append(('[{}] IoU total'.format(phase), tp_ / (tp_ + fp_ + fn_)))
+        eval_list.append(('[{}] F1 total'.format(phase), 2*tp_ / (2*tp_ + fp_ + fn_)))
 
     return eval_list, image_list
 
