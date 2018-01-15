@@ -1,5 +1,7 @@
 # KittiSeg
 
+Based on M. Teichmann's [KittiSeg](https://github.com/MarvinTeichmann/KittiSeg), modified to support **multiclass segmentation.**
+
 KittiSeg performs segmentation of roads by utilizing an FCN based model. The model achieved [first place](http://www.cvlibs.net/datasets/kitti/eval_road_detail.php?result=ca96b8137feb7a636f3d774c408b1243d8a6e0df) on the Kitti Road Detection Benchmark at submission time. Check out our [paper](https://arxiv.org/abs/1612.07695) for a detailed model description.
 
 <img src="data/examples/um_road_000032.png" width="288"> <img src="data/examples/uu_road_000002.png" width="288"> <img src="data/examples/uu_road_000049.png" width="288"> 
@@ -8,38 +10,29 @@ KittiSeg performs segmentation of roads by utilizing an FCN based model. The mod
 
 The model is designed to perform well on small datasets. The training is done using just *250* densely labelled images. Despite this a state-of-the art MaxF1 score of over *96%* is achieved. The model is usable for real-time application. Inference can be performed at the impressive speed of *95ms* per image.
 
-The repository contains code for training, evaluating and visualizing semantic segmentation in TensorFlow. It is build to be compatible with the [TensorVision](http://tensorvision.readthedocs.io/en/master/user/tutorial.html#workflow) back end which allows to organize experiments in a very clean way. Also check out [KittiBox](https://github.com/MarvinTeichmann/KittiBox#kittibox) a similar projects to perform state-of-the art detection. And finally the [MultiNet](https://github.com/MarvinTeichmann/MultiNet) repository contains code to jointly train segmentation, classification and detection. KittiSeg and KittiBox are utilized as submodules in MultiNet.
-
+The repository contains code for training, evaluating and visualizing semantic segmentation in TensorFlow. 
 
 ## Requirements
 
-The code requires [Tensorflow 1.0](https://www.tensorflow.org/install/), python 2.7 as well as the following python libraries: 
+The code was tested on Ubuntu 16.04 using [Tensorflow 1.4](https://www.tensorflow.org/install/) with GPU support, python 3.5 as well as the following python libraries: 
 
 * matplotlib
 * numpy
 * Pillow
 * scipy
-* commentjson
 
-Those modules can be installed using: `pip install numpy scipy pillow matplotlib commentjson` or `pip install -r requirements.txt`.
+Those modules can be installed using: `pip install numpy scipy pillow matplotlib` or `pip install -r requirements.txt`.
 
 
 ## Setup
 
 1. Clone this repository: `git clone https://github.com/MarvinTeichmann/KittiSeg.git`
-2. Initialize all submodules: `git submodule update --init --recursive`
-3. [Optional] Download Kitti Road Data:
+2. [Optional] Download Kitti Road Data:
     1. Retrieve kitti data url here: [http://www.cvlibs.net/download.php?file=data_road.zip](http://www.cvlibs.net/download.php?file=data_road.zip)
     2. Call `python download_data.py --kitti_url URL_YOU_RETRIEVED`
     
-Running the model using `demo.py` does not require you to download kitti data (step 3). Step 3 is only required if you want to train your own model using `train.py` or bench a model agains the official evaluation score `evaluate.py`. Also note, that I recommend using `download_data.py` instead of downloading the data yourself. The script will also extract and prepare the data. See Section [Manage data storage](README.md#manage-data-storage) if you like to control where the data is stored.
+Running the model using `demo.py` does not require you to download kitti data (step 2). Step 2 is only required if you want to train your own model using `train.py` or bench a model agains the official evaluation score `evaluate.py`. Also note, that I recommend using `download_data.py` instead of downloading the data yourself. The script will also extract and prepare the data. See Section [Manage data storage](README.md#manage-data-storage) if you like to control where the data is stored.
 
-##### To update an existing installation do:
-
-1. Pull all patches: `git pull`
-2. Update all submodules: `git submodule update --init --recursive`
-
-If you forget the second step you might end up with an inconstant repository state. You will already have the new code for KittiSeg but run it old submodule versions code. This can work, but I do not run any tests to verify this.
 
 ## Tutorial
 
@@ -51,7 +44,7 @@ Run: `python evaluate.py` to evaluate a trained model.
 
 Run: `python train.py --hypes hypes/KittiSeg.json` to train a model using Kitti Data.
 
-If you like to understand the code, I would recommend looking at [demo.py](demo.py) first. I have documented each step as  	thoroughly as possible in this file.
+If you like to understand the code, I would recommend looking at [demo.py](demo.py) first. I have documented each step as thoroughly as possible in this file.
 
 
 ### Manage Data Storage
@@ -92,9 +85,6 @@ For advanced modifications, the code is controlled by 5 different modules, which
 ```
 
 Those modules operate independently. This allows easy experiments with different datasets (`input_file`), encoder networks (`architecture_file`), etc. Also see [TensorVision](http://tensorvision.readthedocs.io/en/master/user/tutorial.html#workflow) for a specification of each of those files.
-
-
-
 
 
 ## Utilize TensorVision backend
@@ -150,3 +140,13 @@ If you benefit from this code, please cite our paper:
 }
 ```
 
+# KittiSeg Modifications
+Important modifications of the original KittiSeg project:
+
+* Migrated to python3 and Tensorflow1.4
+* TensorVision submodule is included to the current repository
+* Multiclass segmentatnion support:
+    * Multiclass input reader: `vaihingen_seg_input.py`
+        * classes listed in hype-file are sorten **alphabetically** before one-hot encoding applied
+    * New evaluation script: `vaihingen_eval.py`
+        * calculate IoU and F1 per class 
